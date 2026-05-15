@@ -1,4 +1,4 @@
-# CDI Omics Systems
+# CDI Multiomics Systems
 
 Structured omics system architectures for reproducible biological data analysis, interpretation, and reporting.
 
@@ -6,7 +6,7 @@ Structured omics system architectures for reproducible biological data analysis,
 
 ## Overview
 
-CDI Omics Systems is an evolving ecosystem of structured omics workflows designed to connect:
+CDI Multiomics Systems is an evolving ecosystem of structured omics workflows designed to connect:
 
 - raw biological data
 - analytical processing
@@ -18,7 +18,7 @@ The focus is not only on running tools, but on building complete analytical syst
 
 ---
 
-# An Evolving Omics Ecosystem
+# An Evolving Multiomics Ecosystem
 
 CDI Omics Systems is designed as a modular and continuously expanding ecosystem of reproducible analytical systems.
 
@@ -37,7 +37,7 @@ Some builds are actively expanding as the ecosystem evolves.
 
 Many workflows stop at generating outputs.
 
-CDI Omics Systems emphasizes:
+CDI Multiomics Systems emphasizes:
 
 ```text
 Data
@@ -52,7 +52,7 @@ Each build is designed to function as a connected system rather than an isolated
 
 ---
 
-# Omics System Builds
+# Multiomics System Builds
 
 ## Build 01 · RNA-seq System
 
@@ -192,7 +192,7 @@ Depending on the build, workflows may integrate:
 
 # Website
 
-https://omics.complexdatainsights.com
+https://multiomics.complexdatainsights.com
 
 ---
 
