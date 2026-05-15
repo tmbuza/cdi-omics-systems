@@ -1,0 +1,30 @@
+# Appendix {-}
+
+## Reproducibility
+
+CDI Omics Systems emphasizes reproducible workflows through transparent analytical pipelines, version-controlled environments, and structured reporting.
+
+## Environments
+
+Typical environments across CDI Omics Systems may include:
+
+- Quarto
+- R
+- Python
+- Bioconductor
+- GitHub Pages
+- renv
+- virtual environments
+
+## Workflow Philosophy
+
+CDI Omics Systems focuses on:
+
+- systems over isolated outputs
+- interpretation-first analysis
+- reproducible reporting
+- transparent analytical reasoning
+
+## References
+
+References and supplementary technical resources will continue expanding as individual system builds mature.

@@ -1,0 +1,62 @@
+# =========================================
+# CDI Foundation — .gitignore
+# =========================================
+
+# macOS
+.DS_Store
+
+# Quarto
+.quarto/
+_freeze/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDEs
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Generated cache
+.cache/
+
+# System files
+Thumbs.db
+
+# Optional large outputs
+*.zip
+*.tar.gz
+
+# Environment variables
+.env
+.env.*
+
+# Quarto render intermediates
+*_files/
+
+# Keep docs/ because GitHub Pages uses it
+# docs/
+/.quarto/

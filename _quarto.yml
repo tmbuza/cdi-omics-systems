@@ -1,0 +1,45 @@
+project:
+  type: book
+  output-dir: docs
+
+bibliography: library/references.bib
+date: last-modified
+date-format: "MMM YYYY"
+
+book:
+  title: "CDI Omics Systems"
+  subtitle: "Structured omics system architectures for reproducible biological data analysis, interpretation, and reporting."
+
+  chapters:
+    - index.qmd
+    - 00-preface-and-overview.qmd
+    - 01-rnaseq.qmd
+    - 02-microbiome.qmd
+    - 03-gwas.qmd
+    - 04-single-cell.qmd
+    - 05-multiomics.qmd
+   
+  appendices:
+    - 999-appendix.qmd
+
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 2
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-icon: true
+    css: assets/css/cdi.css
+    code-fold: true
+    mermaid:
+      theme: forest
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+  working-dir: .
