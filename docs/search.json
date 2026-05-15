@@ -1,0 +1,416 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CDI Omics Systems",
+    "section": "",
+    "text": "Omics-Systems · Updated May 2026",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>index.html</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html",
+    "href": "00-preface-and-overview.html",
+    "title": "2  Preface and Overview",
+    "section": "",
+    "text": "3 Preface and Overview",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#cdi-omics-systems",
+    "href": "00-preface-and-overview.html#cdi-omics-systems",
+    "title": "2  Preface and Overview",
+    "section": "3.1 CDI Omics Systems",
+    "text": "3.1 CDI Omics Systems\nCDI Omics Systems is an evolving ecosystem of structured omics workflows designed to connect:\n\nraw biological data\nanalytical processing\nstatistical reasoning\ninterpretation\nreproducible reporting\n\nThe focus is not only on running tools, but on building complete analytical systems that support transparent and defensible biological insight.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#build-01-rna-seq-system",
+    "href": "00-preface-and-overview.html#build-01-rna-seq-system",
+    "title": "2  Preface and Overview",
+    "section": "6.1 Build 01 · RNA-seq System",
+    "text": "6.1 Build 01 · RNA-seq System\nEnd-to-end transcriptomics workflows integrating:\n\nFastQC\nMultiQC\nSalmon / STAR\nfeatureCounts\nDESeq2\nexploration and visualization\nQuarto reporting",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#status",
+    "href": "00-preface-and-overview.html#status",
+    "title": "2  Preface and Overview",
+    "section": "6.2 Status",
+    "text": "6.2 Status\nActive flagship build.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#live-build",
+    "href": "00-preface-and-overview.html#live-build",
+    "title": "2  Preface and Overview",
+    "section": "6.3 Live Build",
+    "text": "6.3 Live Build\nrnaseq.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#build-02-microbiome-system",
+    "href": "00-preface-and-overview.html#build-02-microbiome-system",
+    "title": "2  Preface and Overview",
+    "section": "6.4 Build 02 · Microbiome System",
+    "text": "6.4 Build 02 · Microbiome System\nStructured microbiome analysis systems integrating:\n\ndenoising\ntaxonomy assignment\necological analysis\ndiversity analysis\ninterpretation workflows",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#status-1",
+    "href": "00-preface-and-overview.html#status-1",
+    "title": "2  Preface and Overview",
+    "section": "6.5 Status",
+    "text": "6.5 Status\nActive build.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#live-build-1",
+    "href": "00-preface-and-overview.html#live-build-1",
+    "title": "2  Preface and Overview",
+    "section": "6.6 Live Build",
+    "text": "6.6 Live Build\nmicrobiome.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#build-03-gwas-system",
+    "href": "00-preface-and-overview.html#build-03-gwas-system",
+    "title": "2  Preface and Overview",
+    "section": "6.7 Build 03 · GWAS System",
+    "text": "6.7 Build 03 · GWAS System\nGenome-wide association workflows integrating:\n\ngenotype quality control\npopulation structure\nassociation testing\nvariant interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#status-2",
+    "href": "00-preface-and-overview.html#status-2",
+    "title": "2  Preface and Overview",
+    "section": "6.8 Status",
+    "text": "6.8 Status\nActive build.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#live-build-2",
+    "href": "00-preface-and-overview.html#live-build-2",
+    "title": "2  Preface and Overview",
+    "section": "6.9 Live Build",
+    "text": "6.9 Live Build\ngwas.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#build-04-single-cell-rna-seq-system",
+    "href": "00-preface-and-overview.html#build-04-single-cell-rna-seq-system",
+    "title": "2  Preface and Overview",
+    "section": "6.10 Build 04 · Single-cell RNA-seq System",
+    "text": "6.10 Build 04 · Single-cell RNA-seq System\nSingle-cell systems integrating:\n\nnormalization\nclustering\ndimensional reduction\nannotation\ncellular interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#status-3",
+    "href": "00-preface-and-overview.html#status-3",
+    "title": "2  Preface and Overview",
+    "section": "6.11 Status",
+    "text": "6.11 Status\nActive build.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#live-build-3",
+    "href": "00-preface-and-overview.html#live-build-3",
+    "title": "2  Preface and Overview",
+    "section": "6.12 Live Build",
+    "text": "6.12 Live Build\nsinglecell.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#build-05-multi-omics-integration-system",
+    "href": "00-preface-and-overview.html#build-05-multi-omics-integration-system",
+    "title": "2  Preface and Overview",
+    "section": "6.13 Build 05 · Multi-omics Integration System",
+    "text": "6.13 Build 05 · Multi-omics Integration System\nIntegrated systems connecting:\n\ntranscriptomics\nmicrobiome\nclinical metadata\nstatistical modeling\ninterpretation layers",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#status-4",
+    "href": "00-preface-and-overview.html#status-4",
+    "title": "2  Preface and Overview",
+    "section": "6.14 Status",
+    "text": "6.14 Status\nExpanding build.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#live-build-4",
+    "href": "00-preface-and-overview.html#live-build-4",
+    "title": "2  Preface and Overview",
+    "section": "6.15 Live Build",
+    "text": "6.15 Live Build\nmultiomics.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html",
+    "href": "01-rnaseq.html",
+    "title": "3  Build 01 · RNA-seq System",
+    "section": "",
+    "text": "3.1 System Path\nEnd-to-end RNA-seq workflow for reproducible transcriptomics analysis and interpretation.\nCode\nflowchart TD\n\n    A[FASTQ Files]\n    B[FastQC]\n    C[Trimming if Needed]\n    D[Quantification or Alignment]\n    E[MultiQC Aggregation]\n    F[Count Matrix]\n    G[DESeq2]\n    H[Exploration]\n    I[Differential Expression]\n    J[Interpretation]\n    K[Quarto Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n    I --&gt; J\n    J --&gt; K\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#fde68a,stroke:#ca8a04,stroke-width:2px,color:#0f172a\n    style I fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style J fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#0f172a\n    style K fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[FASTQ Files]\n    B[FastQC]\n    C[Trimming if Needed]\n    D[Quantification or Alignment]\n    E[MultiQC Aggregation]\n    F[Count Matrix]\n    G[DESeq2]\n    H[Exploration]\n    I[Differential Expression]\n    J[Interpretation]\n    K[Quarto Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n    I --&gt; J\n    J --&gt; K\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#fde68a,stroke:#ca8a04,stroke-width:2px,color:#0f172a\n    style I fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style J fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#0f172a\n    style K fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#core-tools",
+    "href": "01-rnaseq.html#core-tools",
+    "title": "3  Build 01 · RNA-seq System",
+    "section": "3.2 Core Tools",
+    "text": "3.2 Core Tools\n\nFastQC\nMultiQC\nSalmon\nSTAR\nfeatureCounts\nDESeq2\nQuarto",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#status",
+    "href": "01-rnaseq.html#status",
+    "title": "3  Build 01 · RNA-seq System",
+    "section": "3.3 Status",
+    "text": "3.3 Status\nActive flagship build.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#live-build",
+    "href": "01-rnaseq.html#live-build",
+    "title": "3  Build 01 · RNA-seq System",
+    "section": "3.4 Live Build",
+    "text": "3.4 Live Build\nrnaseq.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html",
+    "href": "02-microbiome.html",
+    "title": "4  Build 02 · Microbiome System",
+    "section": "",
+    "text": "4.1 System Path\nA structured microbiome workflow for reproducible ecological analysis and interpretation.\nCode\nflowchart TD\n\n    A[FASTQ Files]\n\n    B[Quality Control]\n\n    C[Denoising and ASV Inference]\n\n    D[Taxonomy Assignment]\n\n    E[Diversity Analysis]\n\n    F[Community Structure]\n\n    G[Differential Abundance]\n\n    H[Ecological Interpretation]\n\n    I[Quarto Reporting]\n\n    A --&gt; B\n\n    B --&gt; C\n\n    C --&gt; D\n\n    D --&gt; E\n\n    E --&gt; F\n\n    F --&gt; G\n\n    G --&gt; H\n\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[FASTQ Files]\n\n    B[Quality Control]\n\n    C[Denoising and ASV Inference]\n\n    D[Taxonomy Assignment]\n\n    E[Diversity Analysis]\n\n    F[Community Structure]\n\n    G[Differential Abundance]\n\n    H[Ecological Interpretation]\n\n    I[Quarto Reporting]\n\n    A --&gt; B\n\n    B --&gt; C\n\n    C --&gt; D\n\n    D --&gt; E\n\n    E --&gt; F\n\n    F --&gt; G\n\n    G --&gt; H\n\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#planned-tools",
+    "href": "02-microbiome.html#planned-tools",
+    "title": "4  Build 02 · Microbiome System",
+    "section": "4.2 Planned Tools",
+    "text": "4.2 Planned Tools\n\nQIIME 2\nDADA2\nphyloseq\nvegan\nggplot2\nQuarto",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#status",
+    "href": "02-microbiome.html#status",
+    "title": "4  Build 02 · Microbiome System",
+    "section": "4.3 Status",
+    "text": "4.3 Status\nActive flagship build.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#live-build",
+    "href": "02-microbiome.html#live-build",
+    "title": "4  Build 02 · Microbiome System",
+    "section": "4.4 Live Build",
+    "text": "4.4 Live Build\nmicrobiome.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html",
+    "href": "03-gwas.html",
+    "title": "5  Build 03 · GWAS System",
+    "section": "",
+    "text": "5.1 System Path\nA structured genome-wide association workflow for reproducible variant association analysis and interpretation.\nCode\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#planned-tools",
+    "href": "03-gwas.html#planned-tools",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.2 Planned Tools",
+    "text": "5.2 Planned Tools\n\nPLINK\nR\nPython\nPCA / population structure tools\nQuarto",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#status",
+    "href": "03-gwas.html#status",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.3 Status",
+    "text": "5.3 Status\nActive flagship build.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#live-build",
+    "href": "03-gwas.html#live-build",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.4 Live Build",
+    "text": "5.4 Live Build\ngwas.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html",
+    "href": "04-single-cell.html",
+    "title": "6  Build 04 · Single-cell RNA-seq System",
+    "section": "",
+    "text": "6.1 System Path\nA structured single-cell workflow for cell-level transcriptomic analysis and interpretation.\nCode\nflowchart TD\n\n    A[Raw Counts]\n    B[Cell and Gene QC]\n    C[Normalization]\n    D[Dimensional Reduction]\n    E[Clustering]\n    F[Marker Detection]\n    G[Cell Annotation]\n    H[Biological Interpretation]\n    I[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Raw Counts]\n    B[Cell and Gene QC]\n    C[Normalization]\n    D[Dimensional Reduction]\n    E[Clustering]\n    F[Marker Detection]\n    G[Cell Annotation]\n    H[Biological Interpretation]\n    I[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#planned-tools",
+    "href": "04-single-cell.html#planned-tools",
+    "title": "6  Build 04 · Single-cell RNA-seq System",
+    "section": "6.2 Planned Tools",
+    "text": "6.2 Planned Tools\n\nSeurat\nScanpy\nSingleCellExperiment\nUMAP / PCA\nQuarto\n6.3 Status\n\nActive flagship build.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#live-build",
+    "href": "04-single-cell.html#live-build",
+    "title": "6  Build 04 · Single-cell RNA-seq System",
+    "section": "6.4 Live Build",
+    "text": "6.4 Live Build\nsinglecell.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics.html",
+    "href": "05-multiomics.html",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "",
+    "text": "7.1 System Path\nA structured workflow for integrating multiple biological data layers into interpretable analytical systems.\nCode\nflowchart TD\n\n    A[Multi-source biological data&lt;br/&gt;Transcriptomics + Microbiome + Clinical Metadata]\n    B[Data Harmonization]\n    C[Feature Integration]\n    D[Modeling]\n    E[Interpretation]\n    F[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style F fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Multi-source biological data&lt;br/&gt;Transcriptomics + Microbiome + Clinical Metadata]\n    B[Data Harmonization]\n    C[Feature Integration]\n    D[Modeling]\n    E[Interpretation]\n    F[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style F fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics.html#planned-tools",
+    "href": "05-multiomics.html#planned-tools",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.2 Planned Tools",
+    "text": "7.2 Planned Tools\n\nR\nPython\nBioconductor\nscikit-learn\nvisualization frameworks\nQuarto",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics.html#status",
+    "href": "05-multiomics.html#status",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.3 Status",
+    "text": "7.3 Status\nActive flagship build.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics.html#live-build",
+    "href": "05-multiomics.html#live-build",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.4 Live Build",
+    "text": "7.4 Live Build\nmultiomics.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html",
+    "href": "999-appendix.html",
+    "title": "Appendix",
+    "section": "",
+    "text": "Reproducibility\nCDI Omics Systems emphasizes reproducible workflows through transparent analytical pipelines, version-controlled environments, and structured reporting.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#environments",
+    "href": "999-appendix.html#environments",
+    "title": "Appendix",
+    "section": "Environments",
+    "text": "Environments\nTypical environments across CDI Omics Systems may include:\n\nQuarto\nR\nPython\nBioconductor\nGitHub Pages\nrenv\nvirtual environments",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#workflow-philosophy",
+    "href": "999-appendix.html#workflow-philosophy",
+    "title": "Appendix",
+    "section": "Workflow Philosophy",
+    "text": "Workflow Philosophy\nCDI Omics Systems focuses on:\n\nsystems over isolated outputs\ninterpretation-first analysis\nreproducible reporting\ntransparent analytical reasoning",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#references",
+    "href": "999-appendix.html#references",
+    "title": "Appendix",
+    "section": "References",
+    "text": "References\nReferences and supplementary technical resources will continue expanding as individual system builds mature.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  }
+]
