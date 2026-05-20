@@ -17,7 +17,7 @@ book:
     - 02-microbiome.qmd
     - 03-gwas.qmd
     - 04-single-cell.qmd
-    - 05-multiomics.qmd
+    # - 05-multiomics.qmd
    
   appendices:
     - 999-appendix.qmd

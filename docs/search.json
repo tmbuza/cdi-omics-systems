@@ -330,46 +330,6 @@
     ]
   },
   {
-    "objectID": "05-multiomics.html",
-    "href": "05-multiomics.html",
-    "title": "7  Build 05 · Multi-omics Integration System",
-    "section": "",
-    "text": "7.1 System Path\nA structured workflow for integrating multiple biological data layers into interpretable analytical systems.\nCode\nflowchart TD\n\n    A[Multi-source biological data&lt;br/&gt;Transcriptomics + Microbiome + Clinical Metadata]\n    B[Data Harmonization]\n    C[Feature Integration]\n    D[Modeling]\n    E[Interpretation]\n    F[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style F fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Multi-source biological data&lt;br/&gt;Transcriptomics + Microbiome + Clinical Metadata]\n    B[Data Harmonization]\n    C[Feature Integration]\n    D[Modeling]\n    E[Interpretation]\n    F[Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style F fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
-    ]
-  },
-  {
-    "objectID": "05-multiomics.html#planned-tools",
-    "href": "05-multiomics.html#planned-tools",
-    "title": "7  Build 05 · Multi-omics Integration System",
-    "section": "7.2 Planned Tools",
-    "text": "7.2 Planned Tools\n\nR\nPython\nBioconductor\nscikit-learn\nvisualization frameworks\nQuarto",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
-    ]
-  },
-  {
-    "objectID": "05-multiomics.html#status",
-    "href": "05-multiomics.html#status",
-    "title": "7  Build 05 · Multi-omics Integration System",
-    "section": "7.3 Status",
-    "text": "7.3 Status\nActive flagship build.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
-    ]
-  },
-  {
-    "objectID": "05-multiomics.html#live-build",
-    "href": "05-multiomics.html#live-build",
-    "title": "7  Build 05 · Multi-omics Integration System",
-    "section": "7.4 Live Build",
-    "text": "7.4 Live Build\nmultiomics.complexdatainsights.com",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
-    ]
-  },
-  {
     "objectID": "999-appendix.html",
     "href": "999-appendix.html",
     "title": "Appendix",
