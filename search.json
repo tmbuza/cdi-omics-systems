@@ -1,0 +1,1160 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CDI Omics Systems",
+    "section": "",
+    "text": "Omics-Systems · Updated Jun 2026",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>index.html</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html",
+    "href": "00-preface-and-overview.html",
+    "title": "Preface and Overview",
+    "section": "",
+    "text": "Omics Systems\nAt Complex Data Insights (CDI), we define Omics Systems as a systems-oriented framework for reproducible omics data analysis, interpretation, and reporting.\nRather than focusing on individual tools or isolated workflows, Omics Systems emphasizes complete analytical systems that connect:\nThe goal is to transform biological data into transparent, interpretable, and defensible scientific insight.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#omics-systems",
+    "href": "00-preface-and-overview.html#omics-systems",
+    "title": "Preface and Overview",
+    "section": "",
+    "text": "biological questions\ndata generation\ndata processing\nstatistical analysis\nbiological interpretation\nreproducible reporting",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#why-omics-systems",
+    "href": "00-preface-and-overview.html#why-omics-systems",
+    "title": "Preface and Overview",
+    "section": "Why Omics Systems?",
+    "text": "Why Omics Systems?\nModern omics analyses often focus heavily on software tools and isolated workflows.\nHowever, generating outputs alone does not guarantee meaningful biological understanding.\nOmics Systems promotes a systems-oriented approach:\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThis perspective helps ensure that analytical results remain transparent, reproducible, and scientifically defensible.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#a-common-omics-architecture",
+    "href": "00-preface-and-overview.html#a-common-omics-architecture",
+    "title": "Preface and Overview",
+    "section": "A Common Omics Architecture",
+    "text": "A Common Omics Architecture\nAlthough RNA-Seq, microbiome, proteomics, GWAS, single-cell, and multi-omics analyses address different biological questions, they share a common analytical foundation.\n\nShared Omics Infrastructure\nAll Omics System Builds rely on common principles and processing layers:\n\nexperimental design\ndata generation technologies\ndata management\nomics data processing\nquality control\nreproducibility practices\n\n\n\nDomain-Specific Extensions\nThe systems diverge after feature generation and enter specialized analytical workflows.\n\n\n\n\n\n\n\n\nBuild\nPrimary Focus\nStatus\n\n\n\n\nRNA-Seq\nGene expression\nImplemented\n\n\nMicrobiome\nMicrobial communities\nImplemented\n\n\nProteomics\nProtein abundance and functional interpretation\nCurrent addition\n\n\nGWAS\nGenetic variants\nPlanned expansion\n\n\nSingle-cell\nCellular heterogeneity\nPlanned expansion\n\n\nMulti-omics\nCross-domain integration\nPlanned expansion\n\n\n\nEvery Omics System Build extends this common architecture for a specific biological domain.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#omics-systems-architecture",
+    "href": "00-preface-and-overview.html#omics-systems-architecture",
+    "title": "Preface and Overview",
+    "section": "Omics Systems Architecture",
+    "text": "Omics Systems Architecture\n\n\nCode\nflowchart TD\n\n    A[Biological Question]\n    B[Experimental Design]\n    C[Data Generation]\n    D[Omics Data Processing]\n    E[Quality Control]\n    F[Feature Generation]\n\n    G[RNA-Seq]\n    H[Microbiome]\n    P[Proteomics]\n    I[GWAS]\n    J[Single-cell]\n    K[Multi-omics]\n\n    L[Statistical Inference]\n    M[Biological Interpretation]\n    N[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n\n    F --&gt; G\n    F --&gt; H\n    F --&gt; P\n    F --&gt; I\n    F --&gt; J\n    F --&gt; K\n\n    G --&gt; L\n    H --&gt; L\n    P --&gt; L\n    I --&gt; L\n    J --&gt; L\n    K --&gt; L\n\n    L --&gt; M\n    M --&gt; N\n\n\n\n\n\nflowchart TD\n\n    A[Biological Question]\n    B[Experimental Design]\n    C[Data Generation]\n    D[Omics Data Processing]\n    E[Quality Control]\n    F[Feature Generation]\n\n    G[RNA-Seq]\n    H[Microbiome]\n    P[Proteomics]\n    I[GWAS]\n    J[Single-cell]\n    K[Multi-omics]\n\n    L[Statistical Inference]\n    M[Biological Interpretation]\n    N[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n\n    F --&gt; G\n    F --&gt; H\n    F --&gt; P\n    F --&gt; I\n    F --&gt; J\n    F --&gt; K\n\n    G --&gt; L\n    H --&gt; L\n    P --&gt; L\n    I --&gt; L\n    J --&gt; L\n    K --&gt; L\n\n    L --&gt; M\n    M --&gt; N",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#current-omics-system-builds",
+    "href": "00-preface-and-overview.html#current-omics-system-builds",
+    "title": "Preface and Overview",
+    "section": "Current Omics System Builds",
+    "text": "Current Omics System Builds\nThe current CDI Omics Systems guide summarizes the implementation of the Omics Systems Architecture across major biological data domains.\nRNA-Seq and Microbiome represent the first implemented Omics System builds. Proteomics is the current addition, extending the architecture from transcript-level and community-level analysis into protein-level biological interpretation.\nGWAS, single-cell RNA-Seq, and multi-omics integration are included as planned expansion systems that extend the same architecture into variant-level, cell-resolution, and cross-domain biological analysis.\n\nBuild 01 · RNA-Seq System\nSystem focus: transcript-level biological analysis\nPrimary features: genes, transcripts, expression counts\nTypical outputs: differential expression results, pathway summaries, reproducible reports\nStatus: implemented system\n\n\nBuild 02 · Microbiome System\nSystem focus: microbial community analysis\nPrimary features: ASVs, OTUs, taxa, microbial pathways\nTypical outputs: diversity summaries, taxonomic profiles, differential abundance results, biological interpretation reports\nStatus: implemented system\n\n\nBuild 03 · Proteomics System\nSystem focus: protein-level biological analysis\nPrimary features: proteins, peptides, protein groups, functional annotations\nTypical outputs: differential protein abundance results, GO/pathway enrichment, protein-network interpretation, reproducible reports\nStatus: current addition / active implementation\n\n\nBuild 04 · GWAS System\nSystem focus: variant-level association analysis\nPrimary features: SNPs, genotypes, phenotypes, association statistics\nTypical outputs: association results, Manhattan plots, candidate loci, variant interpretation summaries\nStatus: planned expansion\n\n\nBuild 05 · Single-cell RNA-Seq System\nSystem focus: cell-resolution transcriptomics\nPrimary features: cells, genes, clusters, marker genes, cell types\nTypical outputs: clustering results, marker-gene tables, cell-type annotations, trajectory or state-level interpretation\nStatus: planned expansion\n\n\nBuild 06 · Multi-omics Integration System\nSystem focus: cross-domain biological integration\nPrimary features: harmonized samples, shared metadata, multi-layer molecular features\nTypical outputs: integrated signatures, cross-omics associations, pathway-level synthesis, biological interpretation reports\nStatus: planned expansion",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#technology-ecosystem",
+    "href": "00-preface-and-overview.html#technology-ecosystem",
+    "title": "Preface and Overview",
+    "section": "Technology Ecosystem",
+    "text": "Technology Ecosystem\nDepending on the build, workflows may integrate:\n\nR\nPython\nBioconductor\nQuarto\nQIIME 2\nScanpy\nPlotly\nGitHub Pages\nreproducible computational environments\n\nTechnology choices are secondary to analytical reasoning. Tools may evolve, but the underlying system architecture remains consistent.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "00-preface-and-overview.html#workflow-philosophy",
+    "href": "00-preface-and-overview.html#workflow-philosophy",
+    "title": "Preface and Overview",
+    "section": "Workflow Philosophy",
+    "text": "Workflow Philosophy\nAcross all builds, Omics Systems emphasizes:\n\nsystems over outputs\ninterpretation over automation\nreproducibility over convenience\ntransparency over complexity\nscientific reasoning over software execution\n\nThe goal is to help analysts move beyond running workflows toward building analytical systems that can be understood, reproduced, communicated, and trusted.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface and Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html",
+    "href": "01-rnaseq.html",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "",
+    "text": "Biological Focus\nEnd-to-end RNA-Seq workflows for reproducible transcriptomics analysis, interpretation, and reporting.\nThe RNA-Seq System is the flagship implementation of the Omics Systems Architecture. It demonstrates how raw sequencing reads can be transformed into biologically meaningful insights through a structured and reproducible analytical workflow.\nRNA-Seq enables the study of:\nThe goal is not simply to identify statistically significant genes, but to support transparent and defensible biological conclusions.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#biological-focus",
+    "href": "01-rnaseq.html#biological-focus",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "",
+    "text": "gene expression patterns\ndifferential expression\ntranscript abundance\nbiological pathways\nfunctional interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#why-rna-seq",
+    "href": "01-rnaseq.html#why-rna-seq",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Why RNA-Seq?",
+    "text": "Why RNA-Seq?\nRNA-Seq serves as the flagship Omics System Build because it contains many of the core analytical concepts shared across modern sequencing-based studies, including quality assessment, feature generation, statistical modeling, interpretation, and reproducible reporting.\nAs a result, the RNA-Seq System provides a foundation for understanding the broader Omics Systems framework.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#relationship-to-the-omics-systems-architecture",
+    "href": "01-rnaseq.html#relationship-to-the-omics-systems-architecture",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Relationship to the Omics Systems Architecture",
+    "text": "Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe RNA-Seq System extends this architecture by transforming sequencing reads into gene expression measurements that can be explored, statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#rna-seq-system-architecture",
+    "href": "01-rnaseq.html#rna-seq-system-architecture",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "RNA-Seq System Architecture",
+    "text": "RNA-Seq System Architecture\n\n\nCode\nflowchart TD\n\n    A[FASTQ Files]\n    B[Quality Assessment]\n    C[Read Processing]\n    D[Quantification or Alignment]\n    E[Count Matrix Generation]\n    F[Exploratory Analysis]\n    G[Differential Expression]\n    H[Functional Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n\n\n\n\nflowchart TD\n\n    A[FASTQ Files]\n    B[Quality Assessment]\n    C[Read Processing]\n    D[Quantification or Alignment]\n    E[Count Matrix Generation]\n    F[Exploratory Analysis]\n    G[Differential Expression]\n    H[Functional Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#system-components",
+    "href": "01-rnaseq.html#system-components",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "System Components",
+    "text": "System Components\n\nQuality Assessment\nQuality assessment evaluates sequencing quality, adapter contamination, library complexity, and overall data integrity before downstream analysis begins.\n\n\nRead Processing\nRead processing prepares sequencing reads for quantification or alignment through activities such as adapter removal, quality trimming, filtering, and organization of analysis-ready FASTQ files.\n\n\nQuantification and Alignment\nQuantification and alignment transform sequencing reads into transcript-level or gene-level abundance estimates.\nTypical tools include:\n\nSalmon\nSTAR\nfeatureCounts\n\n\n\nCount Matrix Generation\nThe count matrix is the central analytical object for downstream RNA-Seq analysis. It connects samples, genes, expression measurements, and experimental metadata.\n\n\nExploratory Analysis\nExploratory analysis evaluates sample-level structure before formal differential expression testing.\nCommon analyses include:\n\nsample clustering\nprincipal component analysis (PCA)\noutlier detection\nbatch effect assessment\nsample metadata validation\n\n\n\nDifferential Expression Analysis\nDifferential expression analysis identifies genes associated with experimental conditions or biological contrasts.\nTypical tools include:\n\nDESeq2\n\n\n\nFunctional Interpretation\nFunctional interpretation translates statistical findings into biological understanding through pathway analysis, gene set analysis, and biological context evaluation.\n\n\nReproducible Reporting\nReproducible reporting connects workflow decisions, code, outputs, interpretation, and conclusions in a transparent analytical document.\nTypical tools include:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#core-technologies",
+    "href": "01-rnaseq.html#core-technologies",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Core Technologies",
+    "text": "Core Technologies\nThe RNA-Seq System may integrate:\n\nFastQC\nMultiQC\nSalmon\nSTAR\nfeatureCounts\nDESeq2\nQuarto\nGitHub\n\nThese technologies support the workflow, but the primary focus of the RNA-Seq System is analytical reasoning, interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#status",
+    "href": "01-rnaseq.html#status",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Status",
+    "text": "Status\nActive flagship build\nThe RNA-Seq System serves as the primary reference implementation of the Omics Systems Architecture and provides the foundation for understanding how the broader ecosystem approaches reproducible biological data analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#live-build",
+    "href": "01-rnaseq.html#live-build",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Live Build",
+    "text": "Live Build\nhttps://rnaseq.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#key-takeaway",
+    "href": "01-rnaseq.html#key-takeaway",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe RNA-Seq System illustrates the Omics Systems approach to transcriptomics analysis.\nRather than treating quality control, quantification, differential expression, interpretation, and reporting as separate activities, the system connects them into a single analytical framework.\nThe result is a workflow that links:\nsequencing data\n      ↓\nstatistical evidence\n      ↓\nbiological interpretation\n      ↓\nreproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html",
+    "href": "02-microbiome.html",
+    "title": "Build 02 · Microbiome System",
+    "section": "",
+    "text": "Biological Focus\nA structured microbiome analysis system for reproducible ecological analysis, biological interpretation, and reporting.\nThe Microbiome System demonstrates how microbial sequencing data can be transformed into ecological and biological insights through a structured and reproducible analytical framework.\nMicrobiome analysis enables the study of:\nThe goal is not simply to describe microbial communities, but to understand how ecological patterns relate to biological and environmental processes.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#biological-focus",
+    "href": "02-microbiome.html#biological-focus",
+    "title": "Build 02 · Microbiome System",
+    "section": "",
+    "text": "microbial community composition\necological diversity\ncommunity structure\ntaxonomic profiles\nfunctional potential\nhost–microbe relationships\necological interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#why-microbiome",
+    "href": "02-microbiome.html#why-microbiome",
+    "title": "Build 02 · Microbiome System",
+    "section": "Why Microbiome?",
+    "text": "Why Microbiome?\nThe Microbiome System serves as a complementary implementation of the Omics Systems Architecture.\nWhile RNA-Seq focuses on gene expression, microbiome analysis focuses on microbial communities and ecological relationships.\nAs a result, the Microbiome System introduces analytical concepts such as diversity analysis, ecological distance measures, community structure, compositionality, taxonomic interpretation, and ecological reasoning while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#relationship-to-the-omics-systems-architecture",
+    "href": "02-microbiome.html#relationship-to-the-omics-systems-architecture",
+    "title": "Build 02 · Microbiome System",
+    "section": "Relationship to the Omics Systems Architecture",
+    "text": "Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe Microbiome System extends this architecture by transforming microbial sequencing reads into community profiles that can be explored, statistically evaluated, ecologically interpreted, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#microbiome-system-architecture",
+    "href": "02-microbiome.html#microbiome-system-architecture",
+    "title": "Build 02 · Microbiome System",
+    "section": "Microbiome System Architecture",
+    "text": "Microbiome System Architecture\n\n\nCode\nflowchart TD\n\n    A[FASTQ Files]\n    B[Quality Control]\n    C[Denoising and ASV Inference]\n    D[Taxonomy Assignment]\n    E[Diversity Analysis]\n    F[Community Structure]\n    G[Differential Abundance]\n    H[Ecological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[FASTQ Files]\n    B[Quality Control]\n    C[Denoising and ASV Inference]\n    D[Taxonomy Assignment]\n    E[Diversity Analysis]\n    F[Community Structure]\n    G[Differential Abundance]\n    H[Ecological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#system-components",
+    "href": "02-microbiome.html#system-components",
+    "title": "Build 02 · Microbiome System",
+    "section": "System Components",
+    "text": "System Components\n\nQuality Control\nQuality control evaluates sequencing quality, sample integrity, contamination, read depth, and filtering requirements before downstream ecological analysis begins.\n\n\nDenoising and ASV Inference\nDenoising removes sequencing errors and infers high-resolution amplicon sequence variants (ASVs) that represent biological sequences within the community.\nTypical tools include:\n\nDADA2\nQIIME 2\n\n\n\nTaxonomy Assignment\nTaxonomy assignment classifies ASVs against reference databases to characterize microbial community composition.\nCommon reference databases include:\n\nSILVA\nGreengenes\nGTDB\n\n\n\nDiversity Analysis\nDiversity analysis evaluates microbial richness, evenness, and community dissimilarity.\nCommon analyses include:\n\nalpha diversity\nbeta diversity\nrarefaction assessment\necological distance metrics\n\n\n\nCommunity Structure\nCommunity structure analysis evaluates relationships among microbial communities across samples, groups, environments, or host conditions.\nCommon approaches include:\n\nordination\nclustering\nPERMANOVA\ndispersion analysis\n\n\n\nDifferential Abundance\nDifferential abundance analysis identifies microbial taxa or features associated with biological or environmental conditions.\nThis stage requires careful consideration of compositionality, normalization, sparsity, multiple testing, and statistical assumptions.\n\n\nEcological Interpretation\nEcological interpretation translates statistical patterns into biological and ecological understanding.\nCommon areas of interpretation include:\n\nhost–microbe interactions\nenvironmental influences\ncommunity dynamics\nmicrobial shifts across conditions\necological hypotheses\n\n\n\nReproducible Reporting\nReproducible reporting connects workflow decisions, analytical outputs, interpretation, and conclusions within a transparent analytical document.\nTypical tools include:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#core-technologies",
+    "href": "02-microbiome.html#core-technologies",
+    "title": "Build 02 · Microbiome System",
+    "section": "Core Technologies",
+    "text": "Core Technologies\nExamples of technologies commonly used within the Microbiome System include:\n\nQIIME 2\nMothur\nDADA2\nphyloseq\nvegan\nggplot2\nQuarto\nGitHub\n\nThese technologies support the workflow, but the primary focus of the Microbiome System is ecological reasoning, biological interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#status",
+    "href": "02-microbiome.html#status",
+    "title": "Build 02 · Microbiome System",
+    "section": "Status",
+    "text": "Status\nActive build\nThe Microbiome System serves as the reference implementation for ecological and community-based analysis within the Omics Systems Architecture.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#live-build",
+    "href": "02-microbiome.html#live-build",
+    "title": "Build 02 · Microbiome System",
+    "section": "Live Build",
+    "text": "Live Build\nhttps://microbiome.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#key-takeaway",
+    "href": "02-microbiome.html#key-takeaway",
+    "title": "Build 02 · Microbiome System",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe Microbiome System illustrates the Omics Systems approach to microbial community analysis.\nRather than treating sequence processing, diversity analysis, community structure assessment, ecological interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.\nThe result is a workflow that links:\nmicrobial sequencing data\n      ↓\necological evidence\n      ↓\nbiological interpretation\n      ↓\nreproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html",
+    "href": "03-gwas.html",
+    "title": "5  Build 03 · GWAS System",
+    "section": "",
+    "text": "5.1 Biological Focus\nA structured genome-wide association analysis system for reproducible variant association analysis, interpretation, and reporting.\nThe GWAS System demonstrates how genotype data can be transformed into statistically and biologically meaningful insights through a structured and reproducible analytical framework.\nGenome-wide association studies (GWAS) enable the study of:\nThe goal is not simply to identify statistically significant variants, but to understand how genetic variation contributes to biological traits and disease processes.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#biological-focus",
+    "href": "03-gwas.html#biological-focus",
+    "title": "5  Build 03 · GWAS System",
+    "section": "",
+    "text": "genetic variation\ngenotype–phenotype relationships\npopulation structure\ntrait-associated loci\nvariant prioritization\nbiological interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#why-gwas",
+    "href": "03-gwas.html#why-gwas",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.2 Why GWAS?",
+    "text": "5.2 Why GWAS?\nThe GWAS System serves as the reference implementation for population-scale genetic association analysis within the Omics Systems framework.\nWhile RNA-Seq focuses on gene expression and microbiome analysis focuses on microbial communities, GWAS focuses on identifying associations between genetic variants and phenotypic traits.\nAs a result, the GWAS System introduces analytical concepts such as population structure correction, large-scale association testing, variant prioritization, and genetic interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#relationship-to-the-omics-systems-architecture",
+    "href": "03-gwas.html#relationship-to-the-omics-systems-architecture",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.3 Relationship to the Omics Systems Architecture",
+    "text": "5.3 Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nNGS Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe GWAS System extends this architecture by transforming genotype data into association evidence that can be statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#gwas-system-architecture",
+    "href": "03-gwas.html#gwas-system-architecture",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.4 GWAS System Architecture",
+    "text": "5.4 GWAS System Architecture\n\n\nCode\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#system-components",
+    "href": "03-gwas.html#system-components",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.5 System Components",
+    "text": "5.5 System Components\n\nSample Quality Control\nSample-level quality control evaluates data completeness, relatedness, ancestry, contamination, and overall sample integrity before association testing.\n\n\nVariant Quality Control\nVariant-level quality control evaluates genotype quality and filtering criteria.\nCommon assessments include:\n\ncall rate\nminor allele frequency\nHardy–Weinberg equilibrium\nmissingness\n\n\n\nPopulation Structure\nPopulation structure analysis identifies genetic stratification that could confound association results.\nCommon approaches include:\n\nprincipal component analysis (PCA)\nancestry estimation\nrelatedness assessment\n\n\n\nAssociation Testing\nAssociation testing evaluates relationships between genetic variants and phenotypic traits.\nThe choice of statistical model depends on the study design, phenotype type, and population structure.\n\n\nManhattan and QQ Plots\nVisualization helps evaluate association signals and assess potential inflation or systematic bias.\nCommon visualizations include:\n\nManhattan plots\nQQ plots\n\n\n\nVariant Prioritization\nVariant prioritization identifies loci that warrant further investigation.\nCommon considerations include:\n\neffect size\nstatistical significance\nbiological relevance\ngenomic context\n\n\n\nBiological Interpretation\nBiological interpretation translates association signals into biological understanding.\nCommon activities include:\n\ngene mapping\npathway analysis\nfunctional annotation\nliterature integration\n\n\n\nReproducible Reporting\nReproducible reporting connects analytical decisions, results, interpretation, and conclusions within a transparent analytical document.\nTypical tools:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#core-technologies",
+    "href": "03-gwas.html#core-technologies",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.6 Core Technologies",
+    "text": "5.6 Core Technologies\n\nPLINK\nR\nPython\nPCA and population structure tools\nQuarto\n\nThese technologies support the workflow, but the primary focus of the GWAS System is genetic reasoning, interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#status",
+    "href": "03-gwas.html#status",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.7 Status",
+    "text": "5.7 Status\nActive build\nThe GWAS System serves as the reference implementation for population-scale genetic association analysis within the Omics Systems framework.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#live-build",
+    "href": "03-gwas.html#live-build",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.8 Live Build",
+    "text": "5.8 Live Build\nhttps://gwas.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "03-gwas.html#key-takeaway",
+    "href": "03-gwas.html#key-takeaway",
+    "title": "5  Build 03 · GWAS System",
+    "section": "5.9 Key Takeaway",
+    "text": "5.9 Key Takeaway\nThe GWAS System illustrates the Omics Systems approach to genetic association analysis.\nRather than treating quality control, population structure assessment, association testing, variant prioritization, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.\nThe result is a workflow that links:\ngenotype data → association evidence → biological interpretation → reproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html",
+    "href": "04-single-cell.html",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "",
+    "text": "6.1 Biological Focus\nA structured single-cell transcriptomics system for reproducible cell-level analysis, interpretation, and reporting.\nThe Single-cell RNA-Seq System demonstrates how cell-level expression measurements can be transformed into biological insights through a structured and reproducible analytical framework.\nSingle-cell RNA-Seq analysis enables the study of:\nThe goal is not simply to identify clusters of cells, but to understand the biological processes, cell types, and cellular states that drive observed patterns.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#biological-focus",
+    "href": "04-single-cell.html#biological-focus",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "",
+    "text": "cellular heterogeneity\ncell populations\ncell states\ndevelopmental trajectories\nmarker genes\ncellular interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#why-single-cell-rna-seq",
+    "href": "04-single-cell.html#why-single-cell-rna-seq",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.2 Why Single-cell RNA-Seq?",
+    "text": "6.2 Why Single-cell RNA-Seq?\nThe Single-cell RNA-Seq System serves as the reference implementation for cell-level transcriptomic analysis within the Omics Systems framework.\nWhile bulk RNA-Seq evaluates average gene expression across samples, single-cell RNA-Seq enables the investigation of individual cells and cellular diversity.\nAs a result, the Single-cell RNA-Seq System introduces analytical concepts such as cellular heterogeneity, clustering, cell annotation, and marker-based interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#relationship-to-the-omics-systems-architecture",
+    "href": "04-single-cell.html#relationship-to-the-omics-systems-architecture",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.3 Relationship to the Omics Systems Architecture",
+    "text": "6.3 Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nNGS Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe Single-cell RNA-Seq System extends this architecture by transforming cell-level expression measurements into cellular evidence that can be explored, statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#single-cell-rna-seq-system-architecture",
+    "href": "04-single-cell.html#single-cell-rna-seq-system-architecture",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.4 Single-cell RNA-Seq System Architecture",
+    "text": "6.4 Single-cell RNA-Seq System Architecture\n\n\nCode\nflowchart TD\n\n    A[Raw Counts]\n    B[Cell and Gene QC]\n    C[Normalization]\n    D[Dimensional Reduction]\n    E[Clustering]\n    F[Marker Detection]\n    G[Cell Annotation]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Raw Counts]\n    B[Cell and Gene QC]\n    C[Normalization]\n    D[Dimensional Reduction]\n    E[Clustering]\n    F[Marker Detection]\n    G[Cell Annotation]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#system-components",
+    "href": "04-single-cell.html#system-components",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.5 System Components",
+    "text": "6.5 System Components\n\nCell and Gene Quality Control\nQuality control evaluates cell integrity, sequencing depth, feature counts, and potential technical artifacts before downstream analysis.\nCommon assessments include:\n\nnumber of detected genes\nsequencing depth\nmitochondrial content\noutlier detection\n\n\n\nNormalization\nNormalization adjusts expression measurements to improve comparability across cells while reducing technical variation.\n\n\nDimensional Reduction\nDimensional reduction simplifies high-dimensional expression data into lower-dimensional representations that support exploration and visualization.\nCommon approaches include:\n\nPCA\nUMAP\nt-SNE\n\n\n\nClustering\nClustering identifies groups of cells with similar expression profiles.\nThese clusters often represent distinct cell populations or cellular states.\n\n\nMarker Detection\nMarker detection identifies genes that distinguish clusters and support downstream biological interpretation.\n\n\nCell Annotation\nCell annotation assigns biological meaning to clusters using marker genes, reference datasets, and domain knowledge.\n\n\nBiological Interpretation\nBiological interpretation connects observed cellular patterns to biological processes, developmental programs, tissue organization, or disease mechanisms.\n\n\nReproducible Reporting\nReproducible reporting connects analytical decisions, visualizations, interpretation, and conclusions within a transparent analytical document.\nTypical tools:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#core-technologies",
+    "href": "04-single-cell.html#core-technologies",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.6 Core Technologies",
+    "text": "6.6 Core Technologies\n\nSeurat\nScanpy\nSingleCellExperiment\nUMAP\nPCA\nQuarto\n\nThese technologies support the workflow, but the primary focus of the Single-cell RNA-Seq System is cellular reasoning, interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#status",
+    "href": "04-single-cell.html#status",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.7 Status",
+    "text": "6.7 Status\nActive build\nThe Single-cell RNA-Seq System serves as the reference implementation for cell-level transcriptomic analysis within the Omics Systems framework.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#live-build",
+    "href": "04-single-cell.html#live-build",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.8 Live Build",
+    "text": "6.8 Live Build\nhttps://singlecell.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "04-single-cell.html#key-takeaway",
+    "href": "04-single-cell.html#key-takeaway",
+    "title": "6  Build 04 · Single-cell RNA-Seq System",
+    "section": "6.9 Key Takeaway",
+    "text": "6.9 Key Takeaway\nThe Single-cell RNA-Seq System illustrates the Omics Systems approach to cell-level transcriptomic analysis.\nRather than treating quality control, normalization, clustering, annotation, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.\nThe result is a workflow that links:\ncell-level expression data → cellular evidence → biological interpretation → reproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html",
+    "href": "05-multiomics-integration.html",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "",
+    "text": "7.1 Biological Focus\nA structured analytical system for integrating multiple biological data layers into unified and interpretable biological insight.\nThe Multi-omics Integration System demonstrates how evidence generated across multiple omics domains can be harmonized, integrated, modeled, and interpreted within a reproducible analytical framework.\nMulti-omics integration enables the study of:\nThe goal is not simply to combine datasets, but to generate a more complete understanding of biological systems than any individual omics layer can provide.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#biological-focus",
+    "href": "05-multiomics-integration.html#biological-focus",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "",
+    "text": "cross-domain biological relationships\nmolecular interactions\nsystems-level biology\nhost–microbe interactions\ngenotype–phenotype relationships\nintegrated biological interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#why-multi-omics",
+    "href": "05-multiomics-integration.html#why-multi-omics",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.2 Why Multi-omics?",
+    "text": "7.2 Why Multi-omics?\nIndividual omics technologies provide valuable but partial views of biological systems.\nRNA-Seq captures gene expression.\nMicrobiome analysis characterizes microbial communities.\nGWAS identifies genetic associations.\nSingle-cell RNA-Seq reveals cellular heterogeneity.\nThe Multi-omics Integration System brings these complementary perspectives together to support systems-level biological understanding.\nAs a result, the Multi-omics Integration System introduces analytical concepts such as data harmonization, feature integration, cross-domain modeling, and systems interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#relationship-to-the-omics-systems-architecture",
+    "href": "05-multiomics-integration.html#relationship-to-the-omics-systems-architecture",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.3 Relationship to the Omics Systems Architecture",
+    "text": "7.3 Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nNGS Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe Multi-omics Integration System extends this architecture by integrating evidence generated across multiple Omics System Builds into a unified framework for systems-level interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#multi-omics-integration-architecture",
+    "href": "05-multiomics-integration.html#multi-omics-integration-architecture",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.4 Multi-omics Integration Architecture",
+    "text": "7.4 Multi-omics Integration Architecture\n\n\nCode\nflowchart TD\n\n    A[RNA-Seq System]\n    B[Microbiome System]\n    C[GWAS System]\n    D[Single-cell System]\n\n    E[Data Harmonization]\n\n    F[Feature Integration]\n\n    G[Multi-omics Modeling]\n\n    H[Systems Interpretation]\n\n    I[Reproducible Reporting]\n\n    A --&gt; E\n    B --&gt; E\n    C --&gt; E\n    D --&gt; E\n\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[RNA-Seq System]\n    B[Microbiome System]\n    C[GWAS System]\n    D[Single-cell System]\n\n    E[Data Harmonization]\n\n    F[Feature Integration]\n\n    G[Multi-omics Modeling]\n\n    H[Systems Interpretation]\n\n    I[Reproducible Reporting]\n\n    A --&gt; E\n    B --&gt; E\n    C --&gt; E\n    D --&gt; E\n\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#system-components",
+    "href": "05-multiomics-integration.html#system-components",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.5 System Components",
+    "text": "7.5 System Components\n\nData Harmonization\nData harmonization aligns samples, metadata, identifiers, and measurement scales across multiple biological data sources.\nThe objective is to ensure that information generated from different omics domains can be compared and integrated appropriately.\n\n\nFeature Integration\nFeature integration combines information from multiple omics layers into a unified analytical representation.\nExamples include:\n\ntranscriptomics and microbiome integration\ngenotype and expression integration\nclinical and molecular data integration\n\n\n\nMulti-omics Modeling\nModeling identifies relationships that span multiple biological layers.\nCommon approaches include:\n\ncorrelation-based integration\nnetwork analysis\nmachine learning\nlatent factor models\npredictive modeling\n\n\n\nSystems Interpretation\nSystems interpretation translates integrated analytical results into biological understanding.\nCommon areas of interpretation include:\n\nbiological pathways\nmolecular networks\nhost–microbe interactions\ndisease mechanisms\nsystems-level hypotheses\n\n\n\nReproducible Reporting\nReproducible reporting connects analytical decisions, integrated results, interpretation, and conclusions within a transparent analytical document.\nTypical tools:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#core-technologies",
+    "href": "05-multiomics-integration.html#core-technologies",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.6 Core Technologies",
+    "text": "7.6 Core Technologies\n\nR\nPython\nBioconductor\nscikit-learn\nvisualization frameworks\nQuarto\n\nThese technologies support the workflow, but the primary focus of the Multi-omics Integration System is systems-level reasoning, interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#status",
+    "href": "05-multiomics-integration.html#status",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.7 Status",
+    "text": "7.7 Status\nIntegrative build\nThe Multi-omics Integration System serves as the systems-level integration layer within the Omics Systems framework, bringing together evidence generated across multiple analytical domains.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#live-build",
+    "href": "05-multiomics-integration.html#live-build",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.8 Live Build",
+    "text": "7.8 Live Build\nThe Multiomics Ecosystem is published at:\nhttps://multiomics.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "05-multiomics-integration.html#key-takeaway",
+    "href": "05-multiomics-integration.html#key-takeaway",
+    "title": "7  Build 05 · Multi-omics Integration System",
+    "section": "7.9 Key Takeaway",
+    "text": "7.9 Key Takeaway\nThe Multi-omics Integration System illustrates the Omics Systems approach to cross-domain biological analysis.\nRather than treating transcriptomics, microbiome data, genetics, clinical metadata, and other biological layers as independent analyses, the system integrates them into a unified framework for systems-level interpretation.\nThe result is a workflow that links:\nmultiple biological data layers → integrated evidence → systems interpretation → reproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html",
+    "href": "999-appendix.html",
+    "title": "Appendix",
+    "section": "",
+    "text": "Reproducibility\nThis appendix summarizes shared principles, reproducibility expectations, and technical conventions used across CDI Omics Systems.\nCDI Omics Systems emphasizes reproducible workflows through transparent analytical pipelines, version-controlled environments, structured reporting, and clearly documented analytical decisions.\nAcross all builds, reproducibility means that another analyst should be able to understand:\nReproducibility is therefore treated as a system-level responsibility, not only a final reporting step.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#environments",
+    "href": "999-appendix.html#environments",
+    "title": "Appendix",
+    "section": "Environments",
+    "text": "Environments\nTypical environments across CDI Omics Systems may include:\n\nQuarto\nR\nPython\nBioconductor\nGitHub Pages\nrenv\nConda\nvirtual environments\ncontainers where appropriate\n\nThe specific environment depends on the omics domain, but each system should document the computational context used to generate results.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#workflow-philosophy",
+    "href": "999-appendix.html#workflow-philosophy",
+    "title": "Appendix",
+    "section": "Workflow Philosophy",
+    "text": "Workflow Philosophy\nCDI Omics Systems focuses on:\n\nsystems over isolated outputs\ninterpretation-first analysis\nreproducible reporting\ntransparent analytical reasoning\ndocumentation as part of analysis\nbiological meaning over tool execution\nextensible workflows over one-time scripts\n\nThe goal is to help analysts move from scattered analysis steps toward structured systems that can be understood, reproduced, communicated, and trusted.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#references",
+    "href": "999-appendix.html#references",
+    "title": "Appendix",
+    "section": "References",
+    "text": "References\nReferences and supplementary technical resources will continue expanding as individual system builds mature.\nEach Omics System Build may include domain-specific references, including software documentation, statistical methods, biological interpretation resources, and reproducibility guidance.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html",
+    "href": "03-proteomics.html",
+    "title": "Build 03 · Proteomics System",
+    "section": "",
+    "text": "Biological Focus\nA structured proteomics analysis system for reproducible protein-level analysis, biological interpretation, and reporting.\nThe Proteomics System is the current addition to the CDI Omics Systems Architecture. It extends the architecture beyond transcript-level and community-level analysis into protein abundance, differential protein analysis, functional annotation, pathway interpretation, and reproducible reporting.\nProteomics analysis enables the study of:\nThe goal is not simply to identify statistically significant proteins, but to understand how protein-level changes support biological mechanisms, pathway-level patterns, and defensible scientific conclusions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#biological-focus",
+    "href": "03-proteomics.html#biological-focus",
+    "title": "Build 03 · Proteomics System",
+    "section": "",
+    "text": "protein abundance\ndifferential protein expression or abundance\nprotein identifiers and annotations\nbiological pathways\nGene Ontology terms\nprotein networks\nfunctional interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#why-gwas",
+    "href": "03-proteomics.html#why-gwas",
+    "title": "5  Build 03 · Proteomics System",
+    "section": "5.2 Why GWAS?",
+    "text": "5.2 Why GWAS?\nThe GWAS System serves as the reference implementation for population-scale genetic association analysis within the Omics Systems framework.\nWhile RNA-Seq focuses on gene expression and microbiome analysis focuses on microbial communities, GWAS focuses on identifying associations between genetic variants and phenotypic traits.\nAs a result, the GWAS System introduces analytical concepts such as population structure correction, large-scale association testing, variant prioritization, and genetic interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#relationship-to-the-omics-systems-architecture",
+    "href": "03-proteomics.html#relationship-to-the-omics-systems-architecture",
+    "title": "Build 03 · Proteomics System",
+    "section": "Relationship to the Omics Systems Architecture",
+    "text": "Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe Proteomics System extends this architecture by transforming protein abundance tables or differential protein results into interpretable biological evidence that can be quality checked, statistically evaluated, functionally annotated, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#gwas-system-architecture",
+    "href": "03-proteomics.html#gwas-system-architecture",
+    "title": "5  Build 03 · Proteomics System",
+    "section": "5.4 GWAS System Architecture",
+    "text": "5.4 GWAS System Architecture\n\n\nCode\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#system-components",
+    "href": "03-proteomics.html#system-components",
+    "title": "Build 03 · Proteomics System",
+    "section": "System Components",
+    "text": "System Components\n\nInput Assessment\nInput assessment determines the structure and meaning of the proteomics data table.\nCommon input types include:\n\nprotein abundance tables\npeptide abundance tables\nprotein group tables\ndifferential protein abundance results\nannotation or enrichment result tables\n\nThis step identifies key columns such as protein identifiers, gene symbols, protein names, abundance values, log fold changes, p-values, adjusted p-values, and comparison labels.\n\n\nQuality Control\nQuality control evaluates whether the proteomics results are suitable for downstream interpretation.\nCommon checks include:\n\nmissing-value assessment\nprotein identifier completeness\nsample or comparison consistency\nabundance distribution review\nduplicate protein identifier detection\nsignificance column validation\n\n\n\nProtein Identifier Cleaning\nProtein identifier cleaning prepares protein IDs for annotation, enrichment, and biological interpretation.\nThis may include:\n\nstandardizing protein identifiers\nseparating protein groups\nmapping protein IDs to gene symbols\nchecking identifier compatibility with enrichment tools\npreparing clean annotation-ready tables\n\n\n\nDifferential Protein Abundance\nDifferential protein abundance analysis identifies proteins associated with biological conditions or experimental contrasts.\nFor a results-first implementation, this step often begins from an existing differential protein table containing:\n\nprotein identifier\ngene symbol\nlog2 fold change\np-value\nadjusted p-value\ncomparison or contrast\n\n\n\nProtein Ranking and Filtering\nProtein ranking and filtering prioritize proteins for interpretation.\nCommon criteria include:\n\nadjusted p-value threshold\nlog2 fold-change threshold\ndirection of change\nbiological relevance\nannotation availability\n\n\n\nGO and Pathway Enrichment\nFunctional enrichment translates protein-level results into broader biological themes.\nCommon interpretation layers include:\n\nGene Ontology biological process\nmolecular function\ncellular component\npathway enrichment\nfunctional category summaries\n\n\n\nProtein Network Interpretation\nProtein network interpretation evaluates how differentially abundant proteins relate to each other biologically.\nCommon approaches include:\n\nprotein-protein interaction networks\nfunctional modules\npathway-linked clusters\nnetwork-supported biological hypotheses\n\n\n\nBiological Interpretation\nBiological interpretation connects statistical evidence, protein annotation, enrichment patterns, and network context into a coherent scientific explanation.\nThe goal is to move from a list of proteins toward a defensible biological narrative.\n\n\nReproducible Reporting\nReproducible reporting connects workflow decisions, code, outputs, interpretation, and conclusions in a transparent analytical document.\nTypical tools include:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#core-technologies",
+    "href": "03-proteomics.html#core-technologies",
+    "title": "Build 03 · Proteomics System",
+    "section": "Core Technologies",
+    "text": "Core Technologies\nExamples of technologies commonly used within the Proteomics System include:\n\nR\ntidyverse\nreadr\ndplyr\nstringr\ntibble\nggplot2\nclusterProfiler\nSTRING\nQuarto\nGitHub\n\nThese technologies support the workflow, but the primary focus of the Proteomics System is protein-level reasoning, functional interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#status",
+    "href": "03-proteomics.html#status",
+    "title": "Build 03 · Proteomics System",
+    "section": "Status",
+    "text": "Status\nCurrent addition / active implementation\nThe Proteomics System is the current addition to the CDI Omics Systems Architecture. It expands the ecosystem from RNA-Seq and Microbiome systems into protein-level biological analysis and interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#live-build",
+    "href": "03-proteomics.html#live-build",
+    "title": "Build 03 · Proteomics System",
+    "section": "Live Build",
+    "text": "Live Build\nhttps://proteomics.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#key-takeaway",
+    "href": "03-proteomics.html#key-takeaway",
+    "title": "Build 03 · Proteomics System",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe Proteomics System illustrates the Omics Systems approach to protein-level biological analysis.\nRather than treating differential protein tables, protein identifiers, enrichment results, networks, and reporting as separate activities, the system connects them into a unified analytical framework.\nThe result is a workflow that links:\nproteomics result tables\n      ↓\nprotein-level statistical evidence\n      ↓\nfunctional and network interpretation\n      ↓\nreproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html",
+    "href": "04-gwas.html",
+    "title": "Build 04 · GWAS System",
+    "section": "",
+    "text": "Biological Focus\nA structured genome-wide association analysis system for reproducible variant association analysis, interpretation, and reporting.\nThe GWAS System is included as a planned expansion within the CDI Omics Systems Architecture. It demonstrates how genotype data can be transformed into statistically and biologically meaningful insights through a structured and reproducible analytical framework.\nGenome-wide association studies (GWAS) enable the study of:\nThe goal is not simply to identify statistically significant variants, but to understand how genetic variation contributes to biological traits, disease processes, and biological mechanisms.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#biological-focus",
+    "href": "04-gwas.html#biological-focus",
+    "title": "Build 04 · GWAS System",
+    "section": "",
+    "text": "genetic variation\ngenotype–phenotype relationships\npopulation structure\ntrait-associated loci\nvariant prioritization\nbiological interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#why-gwas",
+    "href": "04-gwas.html#why-gwas",
+    "title": "Build 04 · GWAS System",
+    "section": "Why GWAS?",
+    "text": "Why GWAS?\nThe GWAS System serves as the expansion architecture for population-scale genetic association analysis within the Omics Systems framework.\nWhile RNA-Seq focuses on gene expression, microbiome analysis focuses on microbial communities, and proteomics focuses on protein-level biological changes, GWAS focuses on identifying associations between genetic variants and phenotypic traits.\nAs a result, the GWAS System introduces analytical concepts such as sample-level genotype quality control, variant filtering, population structure correction, large-scale association testing, variant prioritization, and genetic interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#relationship-to-the-omics-systems-architecture",
+    "href": "04-gwas.html#relationship-to-the-omics-systems-architecture",
+    "title": "Build 04 · GWAS System",
+    "section": "Relationship to the Omics Systems Architecture",
+    "text": "Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe GWAS System extends this architecture by transforming genotype and phenotype data into association evidence that can be statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#gwas-system-architecture",
+    "href": "04-gwas.html#gwas-system-architecture",
+    "title": "Build 04 · GWAS System",
+    "section": "GWAS System Architecture",
+    "text": "GWAS System Architecture\n\n\nCode\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Genotype Data]\n    B[Sample QC]\n    C[Variant QC]\n    D[Population Structure]\n    E[Association Testing]\n    F[Manhattan and QQ Plots]\n    G[Variant Prioritization]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#system-components",
+    "href": "04-gwas.html#system-components",
+    "title": "Build 04 · GWAS System",
+    "section": "System Components",
+    "text": "System Components\n\nGenotype and Phenotype Inputs\nGWAS begins with genotype data linked to phenotype and sample metadata.\nCommon input elements include:\n\ngenotype files\nsample identifiers\nphenotype tables\ncovariates\npopulation or ancestry information\nstudy design metadata\n\n\n\nSample Quality Control\nSample-level quality control evaluates data completeness, relatedness, ancestry, sex checks, heterozygosity, contamination signals, and overall sample integrity before association testing.\n\n\nVariant Quality Control\nVariant-level quality control evaluates genotype quality and filtering criteria.\nCommon assessments include:\n\ncall rate\nminor allele frequency\nHardy–Weinberg equilibrium\nvariant missingness\nallele coding consistency\n\n\n\nPopulation Structure\nPopulation structure analysis identifies genetic stratification that could confound association results.\nCommon approaches include:\n\nprincipal component analysis (PCA)\nancestry estimation\nrelatedness assessment\ncovariate adjustment\n\n\n\nAssociation Testing\nAssociation testing evaluates relationships between genetic variants and phenotypic traits.\nThe choice of statistical model depends on the study design, phenotype type, population structure, relatedness, and available covariates.\n\n\nManhattan and QQ Plots\nVisualization helps evaluate association signals and assess potential inflation or systematic bias.\nCommon visualizations include:\n\nManhattan plots\nQQ plots\n\n\n\nVariant Prioritization\nVariant prioritization identifies loci that warrant further investigation.\nCommon considerations include:\n\neffect size\nstatistical significance\nbiological relevance\ngenomic context\nnearby genes\nprior evidence\n\n\n\nBiological Interpretation\nBiological interpretation translates association signals into biological understanding.\nCommon activities include:\n\ngene mapping\npathway analysis\nfunctional annotation\nliterature integration\ntrait biology review\n\n\n\nReproducible Reporting\nReproducible reporting connects analytical decisions, quality control thresholds, association results, visualizations, interpretation, and conclusions within a transparent analytical document.\nTypical tools include:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#core-technologies",
+    "href": "04-gwas.html#core-technologies",
+    "title": "Build 04 · GWAS System",
+    "section": "Core Technologies",
+    "text": "Core Technologies\nExamples of technologies commonly used within the GWAS System include:\n\nPLINK\nR\nPython\nPCA and population structure tools\nlocus visualization tools\nQuarto\nGitHub\n\nThese technologies support the workflow, but the primary focus of the GWAS System is genetic reasoning, variant interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#status",
+    "href": "04-gwas.html#status",
+    "title": "Build 04 · GWAS System",
+    "section": "Status",
+    "text": "Status\nPlanned expansion\nThe GWAS System is included as an expansion architecture for population-scale genetic association analysis within the CDI Omics Systems framework.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#live-build",
+    "href": "04-gwas.html#live-build",
+    "title": "Build 04 · GWAS System",
+    "section": "Live Build",
+    "text": "Live Build\nhttps://gwas.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#key-takeaway",
+    "href": "04-gwas.html#key-takeaway",
+    "title": "Build 04 · GWAS System",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe GWAS System illustrates the Omics Systems approach to genetic association analysis.\nRather than treating quality control, population structure assessment, association testing, variant prioritization, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.\nThe result is a workflow that links:\ngenotype data\n      ↓\nassociation evidence\n      ↓\nbiological interpretation\n      ↓\nreproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html",
+    "href": "05-single-cell.html",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "",
+    "text": "Biological Focus\nA structured single-cell transcriptomics system for reproducible cell-level analysis, interpretation, and reporting.\nThe Single-cell RNA-Seq System is included as a planned expansion within the CDI Omics Systems Architecture. It demonstrates how cell-level expression measurements can be transformed into biological insights through a structured and reproducible analytical framework.\nSingle-cell RNA-Seq analysis enables the study of:\nThe goal is not simply to identify clusters of cells, but to understand the biological processes, cell types, and cellular states that drive observed patterns.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#biological-focus",
+    "href": "05-single-cell.html#biological-focus",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "",
+    "text": "cellular heterogeneity\ncell populations\ncell states\ndevelopmental trajectories\nmarker genes\ncell-type annotation\ncellular interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#why-single-cell-rna-seq",
+    "href": "05-single-cell.html#why-single-cell-rna-seq",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Why Single-cell RNA-Seq?",
+    "text": "Why Single-cell RNA-Seq?\nThe Single-cell RNA-Seq System serves as the expansion architecture for cell-resolution transcriptomic analysis within the Omics Systems framework.\nWhile bulk RNA-Seq evaluates average gene expression across samples, single-cell RNA-Seq enables the investigation of individual cells, cellular diversity, tissue composition, and cell-state transitions.\nAs a result, the Single-cell RNA-Seq System introduces analytical concepts such as cellular heterogeneity, cell-level quality control, dimensional reduction, clustering, marker detection, cell annotation, and marker-based interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#relationship-to-the-omics-systems-architecture",
+    "href": "05-single-cell.html#relationship-to-the-omics-systems-architecture",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Relationship to the Omics Systems Architecture",
+    "text": "Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe Single-cell RNA-Seq System extends this architecture by transforming cell-level expression measurements into cellular evidence that can be explored, statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#single-cell-rna-seq-system-architecture",
+    "href": "05-single-cell.html#single-cell-rna-seq-system-architecture",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Single-cell RNA-Seq System Architecture",
+    "text": "Single-cell RNA-Seq System Architecture\n\n\nCode\nflowchart TD\n\n    A[Raw Counts]\n    B[Cell and Gene QC]\n    C[Normalization]\n    D[Dimensional Reduction]\n    E[Clustering]\n    F[Marker Detection]\n    G[Cell Annotation]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Raw Counts]\n    B[Cell and Gene QC]\n    C[Normalization]\n    D[Dimensional Reduction]\n    E[Clustering]\n    F[Marker Detection]\n    G[Cell Annotation]\n    H[Biological Interpretation]\n    I[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#system-components",
+    "href": "05-single-cell.html#system-components",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "System Components",
+    "text": "System Components\n\nInput Data and Metadata\nSingle-cell RNA-Seq analysis begins with expression measurements linked to cell-level, sample-level, and experimental metadata.\nCommon inputs include:\n\nraw count matrices\ncell barcode files\ngene or feature annotation files\nsample metadata\nexperimental condition metadata\nbatch or sequencing-run information\n\n\n\nCell and Gene Quality Control\nQuality control evaluates cell integrity, sequencing depth, feature counts, and potential technical artifacts before downstream analysis.\nCommon assessments include:\n\nnumber of detected genes\nsequencing depth\nmitochondrial content\nribosomal content\ndoublet detection\noutlier detection\nlow-quality cell filtering\n\n\n\nNormalization\nNormalization adjusts expression measurements to improve comparability across cells while reducing technical variation.\nThis step prepares the data for dimensional reduction, clustering, marker detection, and downstream biological interpretation.\n\n\nDimensional Reduction\nDimensional reduction simplifies high-dimensional expression data into lower-dimensional representations that support exploration and visualization.\nCommon approaches include:\n\nPCA\nUMAP\nt-SNE\n\n\n\nClustering\nClustering identifies groups of cells with similar expression profiles.\nThese clusters often represent distinct cell populations, cell states, developmental stages, or condition-associated cellular patterns.\n\n\nMarker Detection\nMarker detection identifies genes that distinguish clusters and support downstream biological interpretation.\nMarker genes provide evidence for cell-type assignment, state characterization, and biological interpretation.\n\n\nCell Annotation\nCell annotation assigns biological meaning to clusters using marker genes, reference datasets, curated knowledge, and domain expertise.\nThis step should be treated as an evidence-based interpretation process rather than a purely automated label assignment.\n\n\nBiological Interpretation\nBiological interpretation connects observed cellular patterns to biological processes, developmental programs, tissue organization, immune states, environmental responses, or disease mechanisms.\n\n\nReproducible Reporting\nReproducible reporting connects analytical decisions, quality thresholds, visualizations, marker evidence, annotation logic, interpretation, and conclusions within a transparent analytical document.\nTypical tools include:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#core-technologies",
+    "href": "05-single-cell.html#core-technologies",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Core Technologies",
+    "text": "Core Technologies\nExamples of technologies commonly used within the Single-cell RNA-Seq System include:\n\nSeurat\nScanpy\nSingleCellExperiment\nscater\nscran\nUMAP\nPCA\nQuarto\nGitHub\n\nThese technologies support the workflow, but the primary focus of the Single-cell RNA-Seq System is cellular reasoning, marker-based interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#status",
+    "href": "05-single-cell.html#status",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Status",
+    "text": "Status\nPlanned expansion\nThe Single-cell RNA-Seq System is included as an expansion architecture for cell-resolution transcriptomic analysis within the CDI Omics Systems framework.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#live-build",
+    "href": "05-single-cell.html#live-build",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Live Build",
+    "text": "Live Build\nhttps://singlecell.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#key-takeaway",
+    "href": "05-single-cell.html#key-takeaway",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe Single-cell RNA-Seq System illustrates the Omics Systems approach to cell-level transcriptomic analysis.\nRather than treating quality control, normalization, clustering, annotation, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.\nThe result is a workflow that links:\ncell-level expression data\n      ↓\ncellular evidence\n      ↓\nbiological interpretation\n      ↓\nreproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html",
+    "href": "06-multiomics-integration.html",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "",
+    "text": "Biological Focus\nA structured analytical system for integrating multiple biological data layers into unified and interpretable biological insight.\nThe Multi-omics Integration System is included as a planned expansion within the CDI Omics Systems Architecture. It demonstrates how evidence generated across multiple omics domains can be harmonized, integrated, modeled, and interpreted within a reproducible analytical framework.\nMulti-omics integration enables the study of:\nThe goal is not simply to combine datasets, but to generate a more complete understanding of biological systems than any individual omics layer can provide.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#biological-focus",
+    "href": "06-multiomics-integration.html#biological-focus",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "",
+    "text": "cross-domain biological relationships\nmolecular interactions\nsystems-level biology\ntranscript–protein relationships\nhost–microbe interactions\ngenotype–phenotype relationships\nintegrated biological interpretation",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#why-multi-omics",
+    "href": "06-multiomics-integration.html#why-multi-omics",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Why Multi-omics?",
+    "text": "Why Multi-omics?\nIndividual omics technologies provide valuable but partial views of biological systems.\nRNA-Seq captures gene expression.\nMicrobiome analysis characterizes microbial communities.\nProteomics measures protein-level abundance and functional signals.\nGWAS identifies genetic associations.\nSingle-cell RNA-Seq reveals cellular heterogeneity.\nThe Multi-omics Integration System brings these complementary perspectives together to support systems-level biological understanding.\nAs a result, the Multi-omics Integration System introduces analytical concepts such as data harmonization, feature integration, cross-domain modeling, pathway-level synthesis, and systems interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#relationship-to-the-omics-systems-architecture",
+    "href": "06-multiomics-integration.html#relationship-to-the-omics-systems-architecture",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Relationship to the Omics Systems Architecture",
+    "text": "Relationship to the Omics Systems Architecture\nAll Omics System Builds share a common analytical foundation.\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nThe Multi-omics Integration System extends this architecture by integrating evidence generated across multiple Omics System Builds into a unified framework for systems-level interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#multi-omics-integration-architecture",
+    "href": "06-multiomics-integration.html#multi-omics-integration-architecture",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Multi-omics Integration Architecture",
+    "text": "Multi-omics Integration Architecture\n\n\nCode\nflowchart TD\n\n    A[RNA-Seq System]\n    B[Microbiome System]\n    C[Proteomics System]\n    D[GWAS System]\n    E[Single-cell System]\n\n    F[Data Harmonization]\n    G[Feature Integration]\n    H[Multi-omics Modeling]\n    I[Systems Interpretation]\n    J[Reproducible Reporting]\n\n    A --&gt; F\n    B --&gt; F\n    C --&gt; F\n    D --&gt; F\n    E --&gt; F\n\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n    I --&gt; J\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n    style J fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[RNA-Seq System]\n    B[Microbiome System]\n    C[Proteomics System]\n    D[GWAS System]\n    E[Single-cell System]\n\n    F[Data Harmonization]\n    G[Feature Integration]\n    H[Multi-omics Modeling]\n    I[Systems Interpretation]\n    J[Reproducible Reporting]\n\n    A --&gt; F\n    B --&gt; F\n    C --&gt; F\n    D --&gt; F\n    E --&gt; F\n\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n    I --&gt; J\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n    style J fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#system-components",
+    "href": "06-multiomics-integration.html#system-components",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "System Components",
+    "text": "System Components\n\nData Harmonization\nData harmonization aligns samples, metadata, identifiers, feature definitions, and measurement scales across multiple biological data sources.\nThe objective is to ensure that information generated from different omics domains can be compared and integrated appropriately.\nCommon harmonization tasks include:\n\nsample identifier matching\nmetadata standardization\nphenotype and condition alignment\nfeature identifier mapping\nbatch and platform documentation\nmissing-data assessment\n\n\n\nFeature Integration\nFeature integration combines information from multiple omics layers into a unified analytical representation.\nExamples include:\n\ntranscriptomics and proteomics integration\ntranscriptomics and microbiome integration\ngenotype and expression integration\nmicrobiome and host phenotype integration\nclinical and molecular data integration\n\n\n\nMulti-omics Modeling\nMulti-omics modeling identifies relationships that span multiple biological layers.\nCommon approaches include:\n\ncorrelation-based integration\nnetwork analysis\npathway-level integration\nmachine learning\nlatent factor models\npredictive modeling\n\n\n\nSystems Interpretation\nSystems interpretation translates integrated analytical results into biological understanding.\nCommon areas of interpretation include:\n\nbiological pathways\nmolecular networks\nhost–microbe interactions\ngenotype–phenotype relationships\ntranscript–protein relationships\ndisease mechanisms\nsystems-level hypotheses\n\n\n\nReproducible Reporting\nReproducible reporting connects analytical decisions, harmonized datasets, integrated results, interpretation, and conclusions within a transparent analytical document.\nTypical tools include:\n\nQuarto\nGitHub\nreproducible computational environments",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#core-technologies",
+    "href": "06-multiomics-integration.html#core-technologies",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Core Technologies",
+    "text": "Core Technologies\nExamples of technologies commonly used within the Multi-omics Integration System include:\n\nR\nPython\nBioconductor\ntidyverse\nscikit-learn\nnetwork analysis tools\nvisualization frameworks\nQuarto\nGitHub\n\nThese technologies support the workflow, but the primary focus of the Multi-omics Integration System is systems-level reasoning, interpretation, and reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#status",
+    "href": "06-multiomics-integration.html#status",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Status",
+    "text": "Status\nPlanned expansion / integrative architecture\nThe Multi-omics Integration System serves as the systems-level integration layer within the Omics Systems framework, bringing together evidence generated across multiple analytical domains.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#live-build",
+    "href": "06-multiomics-integration.html#live-build",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Live Build",
+    "text": "Live Build\nThe Multiomics Ecosystem is published at:\nhttps://multiomics.complexdatainsights.com",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#key-takeaway",
+    "href": "06-multiomics-integration.html#key-takeaway",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nThe Multi-omics Integration System illustrates the Omics Systems approach to cross-domain biological analysis.\nRather than treating transcriptomics, microbiome data, proteomics, genetics, clinical metadata, and other biological layers as independent analyses, the system integrates them into a unified framework for systems-level interpretation.\nThe result is a workflow that links:\nmultiple biological data layers\n      ↓\nintegrated evidence\n      ↓\nsystems interpretation\n      ↓\nreproducible reporting\nin a transparent, reproducible, and scientifically defensible manner.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "01-rnaseq.html#expected-outputs",
+    "href": "01-rnaseq.html#expected-outputs",
+    "title": "Build 01 · RNA-Seq System",
+    "section": "Expected Outputs",
+    "text": "Expected Outputs\nA complete RNA-Seq System should produce:\n\nquality control summaries\nprocessed or validated sequencing inputs\ntranscript-level or gene-level quantification outputs\ncount matrices\nsample-level exploratory plots\ndifferential expression results\nfunctional interpretation summaries\nreproducible analytical reports",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Build 01 · RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "02-microbiome.html#expected-outputs",
+    "href": "02-microbiome.html#expected-outputs",
+    "title": "Build 02 · Microbiome System",
+    "section": "Expected Outputs",
+    "text": "Expected Outputs\nA complete Microbiome System should produce:\n\nquality control summaries\nvalidated sequencing inputs\nASV or OTU feature tables\ntaxonomy tables\nsample metadata checks\nalpha diversity summaries\nbeta diversity and ordination outputs\ncommunity structure results\ndifferential abundance results\necological interpretation summaries\nreproducible analytical reports",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Build 02 · Microbiome System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#why-proteomics",
+    "href": "03-proteomics.html#why-proteomics",
+    "title": "Build 03 · Proteomics System",
+    "section": "Why Proteomics?",
+    "text": "Why Proteomics?\nProteomics is an important addition to the Omics Systems Architecture because proteins are closer to biological function than transcripts alone.\nWhile RNA-Seq measures transcript-level activity and microbiome analysis evaluates microbial community structure, proteomics focuses on the molecules that often execute biological processes directly.\nThe Proteomics System introduces analytical concepts such as protein identifier cleaning, missing-value assessment, differential protein abundance, GO and pathway enrichment, protein interaction networks, and results-first biological interpretation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#proteomics-system-architecture",
+    "href": "03-proteomics.html#proteomics-system-architecture",
+    "title": "Build 03 · Proteomics System",
+    "section": "Proteomics System Architecture",
+    "text": "Proteomics System Architecture\n\n\nCode\nflowchart TD\n\n    A[Proteomics Result Tables]\n    B[Input Assessment]\n    C[Quality Control]\n    D[Protein Identifier Cleaning]\n    E[Differential Protein Abundance]\n    F[Protein Ranking and Filtering]\n    G[GO and Pathway Enrichment]\n    H[Protein Network Interpretation]\n    I[Biological Interpretation]\n    J[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n    I --&gt; J\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n    style J fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a\n\n\n\n\n\nflowchart TD\n\n    A[Proteomics Result Tables]\n    B[Input Assessment]\n    C[Quality Control]\n    D[Protein Identifier Cleaning]\n    E[Differential Protein Abundance]\n    F[Protein Ranking and Filtering]\n    G[GO and Pathway Enrichment]\n    H[Protein Network Interpretation]\n    I[Biological Interpretation]\n    J[Reproducible Reporting]\n\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    E --&gt; F\n    F --&gt; G\n    G --&gt; H\n    H --&gt; I\n    I --&gt; J\n\n    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a\n    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a\n    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a\n    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a\n    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a\n    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a\n    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a\n    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a\n    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a\n    style J fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "03-proteomics.html#expected-outputs",
+    "href": "03-proteomics.html#expected-outputs",
+    "title": "Build 03 · Proteomics System",
+    "section": "Expected Outputs",
+    "text": "Expected Outputs\nA complete Proteomics System should produce:\n\nproteomics input inspection summaries\ndetected column summaries\nmissing-value reports\ncleaned protein identifier tables\nranked protein tables\nfiltered differential protein results\nGO or pathway enrichment summaries\nprotein network interpretation outputs\nbiological interpretation evidence tables\nreproducible analytical reports",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Build 03 · Proteomics System</span>"
+    ]
+  },
+  {
+    "objectID": "04-gwas.html#expected-outputs",
+    "href": "04-gwas.html#expected-outputs",
+    "title": "Build 04 · GWAS System",
+    "section": "Expected Outputs",
+    "text": "Expected Outputs\nA complete GWAS System should produce:\n\nsample quality control summaries\nvariant quality control summaries\nfiltered genotype datasets\npopulation structure outputs\nassociation result tables\nManhattan plots\nQQ plots\nprioritized variant or locus tables\nbiological interpretation summaries\nreproducible analytical reports",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Build 04 · GWAS System</span>"
+    ]
+  },
+  {
+    "objectID": "05-single-cell.html#expected-outputs",
+    "href": "05-single-cell.html#expected-outputs",
+    "title": "Build 05 · Single-cell RNA-Seq System",
+    "section": "Expected Outputs",
+    "text": "Expected Outputs\nA complete Single-cell RNA-Seq System should produce:\n\ncell and gene quality control summaries\nfiltered expression matrices\nnormalized expression objects\ndimensional reduction outputs\nclustering results\nmarker gene tables\ncell annotation evidence tables\ncell-type or cell-state summaries\nbiological interpretation summaries\nreproducible analytical reports",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Build 05 · Single-cell RNA-Seq System</span>"
+    ]
+  },
+  {
+    "objectID": "06-multiomics-integration.html#expected-outputs",
+    "href": "06-multiomics-integration.html#expected-outputs",
+    "title": "Build 06 · Multi-omics Integration System",
+    "section": "Expected Outputs",
+    "text": "Expected Outputs\nA complete Multi-omics Integration System should produce:\n\nharmonized sample metadata tables\ncross-omics feature mapping tables\nintegrated analysis-ready datasets\ncross-domain association summaries\nmulti-omics model outputs\npathway-level synthesis summaries\nnetwork or systems-level interpretation outputs\nintegrated biological interpretation reports\nreproducible analytical reports",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Build 06 · Multi-omics Integration System</span>"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#reproducibility",
+    "href": "999-appendix.html#reproducibility",
+    "title": "Appendix",
+    "section": "",
+    "text": "what data were used\nhow inputs were prepared\nwhich quality checks were performed\nwhich scripts or tools were applied\nhow outputs were generated\nhow biological conclusions were reached\nhow the analysis can be repeated or extended",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#shared-file-organization",
+    "href": "999-appendix.html#shared-file-organization",
+    "title": "Appendix",
+    "section": "Shared File Organization",
+    "text": "Shared File Organization\nAlthough individual Omics System Builds may differ, a typical project structure may include:\nproject/\n├── _quarto.yml\n├── index.qmd\n├── chapters/\n├── data/\n│   ├── example/\n│   ├── input/\n│   ├── metadata/\n│   ├── results/\n│   └── reports/\n├── scripts/\n│   ├── bash/\n│   ├── R/\n│   └── python/\n├── figures/\n├── logs/\n├── README.md\n└── references.bib\nThis structure helps separate source data, generated outputs, analysis scripts, reports, and supporting documentation.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#common-analytical-layers",
+    "href": "999-appendix.html#common-analytical-layers",
+    "title": "Appendix",
+    "section": "Common Analytical Layers",
+    "text": "Common Analytical Layers\nAcross Omics System Builds, the following analytical layers are commonly represented:\nBiological Question\n        ↓\nExperimental Design\n        ↓\nData Generation\n        ↓\nOmics Data Processing\n        ↓\nQuality Control\n        ↓\nFeature Generation or Feature Validation\n        ↓\nDomain-Specific Analysis\n        ↓\nStatistical Inference\n        ↓\nBiological Interpretation\n        ↓\nReproducible Reporting\nEach system adapts these layers to its own data type and biological focus.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  },
+  {
+    "objectID": "999-appendix.html#expected-system-outputs",
+    "href": "999-appendix.html#expected-system-outputs",
+    "title": "Appendix",
+    "section": "Expected System Outputs",
+    "text": "Expected System Outputs\nA mature Omics System should produce more than a final table or plot.\nExpected outputs may include:\n\nvalidated input summaries\nmetadata checks\nquality control reports\nanalysis-ready feature tables\nstatistical result tables\ninterpretation evidence tables\nbiological interpretation summaries\nfigures and visual summaries\nreproducible reports\nversion-controlled project documentation\n\nThese outputs support transparency, reuse, and scientific defensibility.",
+    "crumbs": [
+      "Appendices",
+      "Appendix"
+    ]
+  }
+]
