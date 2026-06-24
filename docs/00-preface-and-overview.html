@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Preface and Overview – CDI Omics Systems</title>
+<title>Preface and Overview – CDI Omics Systems</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -19,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -38,10 +76,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-231ef2f9d4ce3268f31ef752336c15d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d8ad657b878717df1156ab40fed854c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,6 +108,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<meta name="mermaid-theme" content="forest">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="assets/css/cdi.css">
@@ -84,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00-preface-and-overview.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preface and Overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00-preface-and-overview.html"><span class="chapter-title">Preface and Overview</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -111,38 +153,42 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">index.html</span></span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./00-preface-and-overview.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preface and Overview</span></span></a>
+  <a href="./00-preface-and-overview.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Preface and Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-rnaseq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Build 01 · RNA-seq System</span></span></a>
+  <a href="./01-rnaseq.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 01 · RNA-Seq System</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-microbiome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Build 02 · Microbiome System</span></span></a>
+  <a href="./02-microbiome.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 02 · Microbiome System</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-gwas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Build 03 · GWAS System</span></span></a>
+  <a href="./03-proteomics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 03 · Proteomics System</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-single-cell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-seq System</span></span></a>
+  <a href="./04-gwas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 04 · GWAS System</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-single-cell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 05 · Single-cell RNA-Seq System</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-multiomics-integration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 06 · Multi-omics Integration System</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -172,33 +218,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface-and-overview" id="toc-preface-and-overview" class="nav-link active" data-scroll-target="#preface-and-overview"><span class="header-section-number">3</span> Preface and Overview</a>
+  <li><a href="#omics-systems" id="toc-omics-systems" class="nav-link active" data-scroll-target="#omics-systems">Omics Systems</a></li>
+  <li><a href="#why-omics-systems" id="toc-why-omics-systems" class="nav-link" data-scroll-target="#why-omics-systems">Why Omics Systems?</a></li>
+  <li><a href="#a-common-omics-architecture" id="toc-a-common-omics-architecture" class="nav-link" data-scroll-target="#a-common-omics-architecture">A Common Omics Architecture</a>
   <ul class="collapse">
-  <li><a href="#cdi-omics-systems" id="toc-cdi-omics-systems" class="nav-link" data-scroll-target="#cdi-omics-systems"><span class="header-section-number">3.1</span> CDI Omics Systems</a></li>
+  <li><a href="#shared-omics-infrastructure" id="toc-shared-omics-infrastructure" class="nav-link" data-scroll-target="#shared-omics-infrastructure">Shared Omics Infrastructure</a></li>
+  <li><a href="#domain-specific-extensions" id="toc-domain-specific-extensions" class="nav-link" data-scroll-target="#domain-specific-extensions">Domain-Specific Extensions</a></li>
   </ul></li>
-  <li><a href="#an-evolving-omics-ecosystem" id="toc-an-evolving-omics-ecosystem" class="nav-link" data-scroll-target="#an-evolving-omics-ecosystem"><span class="header-section-number">4</span> An Evolving Omics Ecosystem</a></li>
-  <li><a href="#systems-over-outputs" id="toc-systems-over-outputs" class="nav-link" data-scroll-target="#systems-over-outputs"><span class="header-section-number">5</span> Systems Over Outputs</a></li>
-  <li><a href="#omics-system-builds" id="toc-omics-system-builds" class="nav-link" data-scroll-target="#omics-system-builds"><span class="header-section-number">6</span> Omics System Builds</a>
+  <li><a href="#omics-systems-architecture" id="toc-omics-systems-architecture" class="nav-link" data-scroll-target="#omics-systems-architecture">Omics Systems Architecture</a></li>
+  <li><a href="#current-omics-system-builds" id="toc-current-omics-system-builds" class="nav-link" data-scroll-target="#current-omics-system-builds">Current Omics System Builds</a>
   <ul class="collapse">
-  <li><a href="#build-01-rna-seq-system" id="toc-build-01-rna-seq-system" class="nav-link" data-scroll-target="#build-01-rna-seq-system"><span class="header-section-number">6.1</span> Build 01 · RNA-seq System</a></li>
-  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status"><span class="header-section-number">6.2</span> Status</a></li>
-  <li><a href="#live-build" id="toc-live-build" class="nav-link" data-scroll-target="#live-build"><span class="header-section-number">6.3</span> Live Build</a></li>
-  <li><a href="#build-02-microbiome-system" id="toc-build-02-microbiome-system" class="nav-link" data-scroll-target="#build-02-microbiome-system"><span class="header-section-number">6.4</span> Build 02 · Microbiome System</a></li>
-  <li><a href="#status-1" id="toc-status-1" class="nav-link" data-scroll-target="#status-1"><span class="header-section-number">6.5</span> Status</a></li>
-  <li><a href="#live-build-1" id="toc-live-build-1" class="nav-link" data-scroll-target="#live-build-1"><span class="header-section-number">6.6</span> Live Build</a></li>
-  <li><a href="#build-03-gwas-system" id="toc-build-03-gwas-system" class="nav-link" data-scroll-target="#build-03-gwas-system"><span class="header-section-number">6.7</span> Build 03 · GWAS System</a></li>
-  <li><a href="#status-2" id="toc-status-2" class="nav-link" data-scroll-target="#status-2"><span class="header-section-number">6.8</span> Status</a></li>
-  <li><a href="#live-build-2" id="toc-live-build-2" class="nav-link" data-scroll-target="#live-build-2"><span class="header-section-number">6.9</span> Live Build</a></li>
-  <li><a href="#build-04-single-cell-rna-seq-system" id="toc-build-04-single-cell-rna-seq-system" class="nav-link" data-scroll-target="#build-04-single-cell-rna-seq-system"><span class="header-section-number">6.10</span> Build 04 · Single-cell RNA-seq System</a></li>
-  <li><a href="#status-3" id="toc-status-3" class="nav-link" data-scroll-target="#status-3"><span class="header-section-number">6.11</span> Status</a></li>
-  <li><a href="#live-build-3" id="toc-live-build-3" class="nav-link" data-scroll-target="#live-build-3"><span class="header-section-number">6.12</span> Live Build</a></li>
-  <li><a href="#build-05-multi-omics-integration-system" id="toc-build-05-multi-omics-integration-system" class="nav-link" data-scroll-target="#build-05-multi-omics-integration-system"><span class="header-section-number">6.13</span> Build 05 · Multi-omics Integration System</a></li>
-  <li><a href="#status-4" id="toc-status-4" class="nav-link" data-scroll-target="#status-4"><span class="header-section-number">6.14</span> Status</a></li>
-  <li><a href="#live-build-4" id="toc-live-build-4" class="nav-link" data-scroll-target="#live-build-4"><span class="header-section-number">6.15</span> Live Build</a></li>
+  <li><a href="#build-01-rna-seq-system" id="toc-build-01-rna-seq-system" class="nav-link" data-scroll-target="#build-01-rna-seq-system">Build 01 · RNA-Seq System</a></li>
+  <li><a href="#build-02-microbiome-system" id="toc-build-02-microbiome-system" class="nav-link" data-scroll-target="#build-02-microbiome-system">Build 02 · Microbiome System</a></li>
+  <li><a href="#build-03-proteomics-system" id="toc-build-03-proteomics-system" class="nav-link" data-scroll-target="#build-03-proteomics-system">Build 03 · Proteomics System</a></li>
+  <li><a href="#build-04-gwas-system" id="toc-build-04-gwas-system" class="nav-link" data-scroll-target="#build-04-gwas-system">Build 04 · GWAS System</a></li>
+  <li><a href="#build-05-single-cell-rna-seq-system" id="toc-build-05-single-cell-rna-seq-system" class="nav-link" data-scroll-target="#build-05-single-cell-rna-seq-system">Build 05 · Single-cell RNA-Seq System</a></li>
+  <li><a href="#build-06-multi-omics-integration-system" id="toc-build-06-multi-omics-integration-system" class="nav-link" data-scroll-target="#build-06-multi-omics-integration-system">Build 06 · Multi-omics Integration System</a></li>
   </ul></li>
-  <li><a href="#workflow-philosophy" id="toc-workflow-philosophy" class="nav-link" data-scroll-target="#workflow-philosophy"><span class="header-section-number">7</span> Workflow Philosophy</a></li>
-  <li><a href="#technology-ecosystem" id="toc-technology-ecosystem" class="nav-link" data-scroll-target="#technology-ecosystem"><span class="header-section-number">8</span> Technology Ecosystem</a></li>
-  <li><a href="#cdi" id="toc-cdi" class="nav-link" data-scroll-target="#cdi"><span class="header-section-number">9</span> CDI</a></li>
+  <li><a href="#technology-ecosystem" id="toc-technology-ecosystem" class="nav-link" data-scroll-target="#technology-ecosystem">Technology Ecosystem</a></li>
+  <li><a href="#workflow-philosophy" id="toc-workflow-philosophy" class="nav-link" data-scroll-target="#workflow-philosophy">Workflow Philosophy</a></li>
   </ul>
 </nav>
     </div>
@@ -207,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preface and Overview</span></h1>
+<h1 class="title"><span class="chapter-title">Preface and Overview</span></h1>
 </div>
 
 
@@ -218,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 2026</p>
+      <p class="date">Jun 2026</p>
     </div>
   </div>
   
@@ -230,185 +268,295 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface-and-overview" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Preface and Overview</h1>
-<section id="cdi-omics-systems" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="cdi-omics-systems"><span class="header-section-number">3.1</span> CDI Omics Systems</h2>
-<p>CDI Omics Systems is an evolving ecosystem of structured omics workflows designed to connect:</p>
+<section id="omics-systems" class="level2">
+<h2 class="anchored" data-anchor-id="omics-systems">Omics Systems</h2>
+<p>At Complex Data Insights (CDI), we define Omics Systems as a systems-oriented framework for reproducible omics data analysis, interpretation, and reporting.</p>
+<p>Rather than focusing on individual tools or isolated workflows, Omics Systems emphasizes complete analytical systems that connect:</p>
 <ul>
-<li>raw biological data</li>
-<li>analytical processing</li>
-<li>statistical reasoning</li>
-<li>interpretation</li>
+<li>biological questions</li>
+<li>data generation</li>
+<li>data processing</li>
+<li>statistical analysis</li>
+<li>biological interpretation</li>
 <li>reproducible reporting</li>
 </ul>
-<p>The focus is not only on running tools, but on building complete analytical systems that support transparent and defensible biological insight.</p>
+<p>The goal is to transform biological data into transparent, interpretable, and defensible scientific insight.</p>
 <hr>
 </section>
+<section id="why-omics-systems" class="level2">
+<h2 class="anchored" data-anchor-id="why-omics-systems">Why Omics Systems?</h2>
+<p>Modern omics analyses often focus heavily on software tools and isolated workflows.</p>
+<p>However, generating outputs alone does not guarantee meaningful biological understanding.</p>
+<p>Omics Systems promotes a systems-oriented approach:</p>
+<pre class="text"><code>Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting</code></pre>
+<p>This perspective helps ensure that analytical results remain transparent, reproducible, and scientifically defensible.</p>
+<hr>
 </section>
-<section id="an-evolving-omics-ecosystem" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> An Evolving Omics Ecosystem</h1>
-<p>CDI Omics Systems is designed as a modular and continuously expanding ecosystem of reproducible analytical systems.</p>
-<p>Each build represents a connected workflow architecture focused on:</p>
+<section id="a-common-omics-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="a-common-omics-architecture">A Common Omics Architecture</h2>
+<p>Although RNA-Seq, microbiome, proteomics, GWAS, single-cell, and multi-omics analyses address different biological questions, they share a common analytical foundation.</p>
+<section id="shared-omics-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="shared-omics-infrastructure">Shared Omics Infrastructure</h3>
+<p>All Omics System Builds rely on common principles and processing layers:</p>
 <ul>
-<li>reproducibility</li>
-<li>workflow transparency</li>
-<li>interpretation-first analysis</li>
-<li>systems-oriented biological reasoning</li>
-</ul>
-<p>Some builds are actively expanding as the ecosystem evolves.</p>
-<hr>
-</section>
-<section id="systems-over-outputs" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Systems Over Outputs</h1>
-<p>Many workflows stop at generating outputs.</p>
-<p>CDI Omics Systems emphasizes:</p>
-<pre class="text"><code>Data
-→ Processing
-→ Exploration
-→ Statistical analysis
-→ Interpretation
-→ Reporting</code></pre>
-<p>Each build is designed to function as a connected system rather than an isolated tutorial.</p>
-<hr>
-</section>
-<section id="omics-system-builds" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Omics System Builds</h1>
-<section id="build-01-rna-seq-system" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="build-01-rna-seq-system"><span class="header-section-number">6.1</span> Build 01 · RNA-seq System</h2>
-<p>End-to-end transcriptomics workflows integrating:</p>
-<ul>
-<li>FastQC</li>
-<li>MultiQC</li>
-<li>Salmon / STAR</li>
-<li>featureCounts</li>
-<li>DESeq2</li>
-<li>exploration and visualization</li>
-<li>Quarto reporting</li>
-</ul>
-</section>
-<section id="status" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="status"><span class="header-section-number">6.2</span> Status</h2>
-<p>Active flagship build.</p>
-</section>
-<section id="live-build" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="live-build"><span class="header-section-number">6.3</span> Live Build</h2>
-<p><a href="https://rnaseq.complexdatainsights.com">rnaseq.complexdatainsights.com</a></p>
-<hr>
-</section>
-<section id="build-02-microbiome-system" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="build-02-microbiome-system"><span class="header-section-number">6.4</span> Build 02 · Microbiome System</h2>
-<p>Structured microbiome analysis systems integrating:</p>
-<ul>
-<li>denoising</li>
-<li>taxonomy assignment</li>
-<li>ecological analysis</li>
-<li>diversity analysis</li>
-<li>interpretation workflows</li>
+<li>experimental design</li>
+<li>data generation technologies</li>
+<li>data management</li>
+<li>omics data processing</li>
+<li>quality control</li>
+<li>reproducibility practices</li>
 </ul>
 </section>
-<section id="status-1" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="status-1"><span class="header-section-number">6.5</span> Status</h2>
-<p>Active build.</p>
-</section>
-<section id="live-build-1" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="live-build-1"><span class="header-section-number">6.6</span> Live Build</h2>
-<p><a href="https://microbiome.complexdatainsights.com">microbiome.complexdatainsights.com</a></p>
-<hr>
-</section>
-<section id="build-03-gwas-system" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="build-03-gwas-system"><span class="header-section-number">6.7</span> Build 03 · GWAS System</h2>
-<p>Genome-wide association workflows integrating:</p>
-<ul>
-<li>genotype quality control</li>
-<li>population structure</li>
-<li>association testing</li>
-<li>variant interpretation</li>
-</ul>
-</section>
-<section id="status-2" class="level2" data-number="6.8">
-<h2 data-number="6.8" class="anchored" data-anchor-id="status-2"><span class="header-section-number">6.8</span> Status</h2>
-<p>Active build.</p>
-</section>
-<section id="live-build-2" class="level2" data-number="6.9">
-<h2 data-number="6.9" class="anchored" data-anchor-id="live-build-2"><span class="header-section-number">6.9</span> Live Build</h2>
-<p><a href="https://gwas.complexdatainsights.com">gwas.complexdatainsights.com</a></p>
-<hr>
-</section>
-<section id="build-04-single-cell-rna-seq-system" class="level2" data-number="6.10">
-<h2 data-number="6.10" class="anchored" data-anchor-id="build-04-single-cell-rna-seq-system"><span class="header-section-number">6.10</span> Build 04 · Single-cell RNA-seq System</h2>
-<p>Single-cell systems integrating:</p>
-<ul>
-<li>normalization</li>
-<li>clustering</li>
-<li>dimensional reduction</li>
-<li>annotation</li>
-<li>cellular interpretation</li>
-</ul>
-</section>
-<section id="status-3" class="level2" data-number="6.11">
-<h2 data-number="6.11" class="anchored" data-anchor-id="status-3"><span class="header-section-number">6.11</span> Status</h2>
-<p>Active build.</p>
-</section>
-<section id="live-build-3" class="level2" data-number="6.12">
-<h2 data-number="6.12" class="anchored" data-anchor-id="live-build-3"><span class="header-section-number">6.12</span> Live Build</h2>
-<p><a href="https://singlecell.complexdatainsights.com">singlecell.complexdatainsights.com</a></p>
-<hr>
-</section>
-<section id="build-05-multi-omics-integration-system" class="level2" data-number="6.13">
-<h2 data-number="6.13" class="anchored" data-anchor-id="build-05-multi-omics-integration-system"><span class="header-section-number">6.13</span> Build 05 · Multi-omics Integration System</h2>
-<p>Integrated systems connecting:</p>
-<ul>
-<li>transcriptomics</li>
-<li>microbiome</li>
-<li>clinical metadata</li>
-<li>statistical modeling</li>
-<li>interpretation layers</li>
-</ul>
-</section>
-<section id="status-4" class="level2" data-number="6.14">
-<h2 data-number="6.14" class="anchored" data-anchor-id="status-4"><span class="header-section-number">6.14</span> Status</h2>
-<p>Expanding build.</p>
-</section>
-<section id="live-build-4" class="level2" data-number="6.15">
-<h2 data-number="6.15" class="anchored" data-anchor-id="live-build-4"><span class="header-section-number">6.15</span> Live Build</h2>
-<p><a href="https://multiomics.complexdatainsights.com">multiomics.complexdatainsights.com</a></p>
+<section id="domain-specific-extensions" class="level3">
+<h3 class="anchored" data-anchor-id="domain-specific-extensions">Domain-Specific Extensions</h3>
+<p>The systems diverge after feature generation and enter specialized analytical workflows.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Build</th>
+<th>Primary Focus</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RNA-Seq</td>
+<td>Gene expression</td>
+<td>Implemented</td>
+</tr>
+<tr class="even">
+<td>Microbiome</td>
+<td>Microbial communities</td>
+<td>Implemented</td>
+</tr>
+<tr class="odd">
+<td>Proteomics</td>
+<td>Protein abundance and functional interpretation</td>
+<td>Current addition</td>
+</tr>
+<tr class="even">
+<td>GWAS</td>
+<td>Genetic variants</td>
+<td>Planned expansion</td>
+</tr>
+<tr class="odd">
+<td>Single-cell</td>
+<td>Cellular heterogeneity</td>
+<td>Planned expansion</td>
+</tr>
+<tr class="even">
+<td>Multi-omics</td>
+<td>Cross-domain integration</td>
+<td>Planned expansion</td>
+</tr>
+</tbody>
+</table>
+<p>Every Omics System Build extends this common architecture for a specific biological domain.</p>
 <hr>
 </section>
 </section>
-<section id="workflow-philosophy" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Workflow Philosophy</h1>
-<p>CDI Omics Systems emphasizes:</p>
-<ul>
-<li>reproducibility</li>
-<li>interpretation-first analysis</li>
-<li>workflow transparency</li>
-<li>modular systems architecture</li>
-<li>defensible analytical reasoning</li>
-</ul>
-<p>The ecosystem is intentionally designed to evolve progressively as individual builds expand.</p>
+<section id="omics-systems-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="omics-systems-architecture">Omics Systems Architecture</h2>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    A[Biological Question]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    B[Experimental Design]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    C[Data Generation]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    D[Omics Data Processing]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    E[Quality Control]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    F[Feature Generation]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    G[RNA-Seq]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    H[Microbiome]</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    P[Proteomics]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    I[GWAS]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    J[Single-cell]</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    K[Multi-omics]</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    L[Statistical Inference]</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    M[Biological Interpretation]</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    N[Reproducible Reporting]</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    A --&gt; B</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    B --&gt; C</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    C --&gt; D</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    D --&gt; E</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    E --&gt; F</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    F --&gt; G</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    F --&gt; H</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    F --&gt; P</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    F --&gt; I</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    F --&gt; J</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    F --&gt; K</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    G --&gt; L</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    H --&gt; L</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    P --&gt; L</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    I --&gt; L</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    J --&gt; L</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    K --&gt; L</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    L --&gt; M</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    M --&gt; N</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+    A[Biological Question]
+    B[Experimental Design]
+    C[Data Generation]
+    D[Omics Data Processing]
+    E[Quality Control]
+    F[Feature Generation]
+
+    G[RNA-Seq]
+    H[Microbiome]
+    P[Proteomics]
+    I[GWAS]
+    J[Single-cell]
+    K[Multi-omics]
+
+    L[Statistical Inference]
+    M[Biological Interpretation]
+    N[Reproducible Reporting]
+
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+
+    F --&gt; G
+    F --&gt; H
+    F --&gt; P
+    F --&gt; I
+    F --&gt; J
+    F --&gt; K
+
+    G --&gt; L
+    H --&gt; L
+    P --&gt; L
+    I --&gt; L
+    J --&gt; L
+    K --&gt; L
+
+    L --&gt; M
+    M --&gt; N
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <hr>
 </section>
-<section id="technology-ecosystem" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Technology Ecosystem</h1>
+<section id="current-omics-system-builds" class="level2">
+<h2 class="anchored" data-anchor-id="current-omics-system-builds">Current Omics System Builds</h2>
+<p>The current CDI Omics Systems guide summarizes the implementation of the Omics Systems Architecture across major biological data domains.</p>
+<p>RNA-Seq and Microbiome represent the first implemented Omics System builds. Proteomics is the current addition, extending the architecture from transcript-level and community-level analysis into protein-level biological interpretation.</p>
+<p>GWAS, single-cell RNA-Seq, and multi-omics integration are included as planned expansion systems that extend the same architecture into variant-level, cell-resolution, and cross-domain biological analysis.</p>
+<section id="build-01-rna-seq-system" class="level3">
+<h3 class="anchored" data-anchor-id="build-01-rna-seq-system">Build 01 · RNA-Seq System</h3>
+<p><strong>System focus:</strong> transcript-level biological analysis<br>
+<strong>Primary features:</strong> genes, transcripts, expression counts<br>
+<strong>Typical outputs:</strong> differential expression results, pathway summaries, reproducible reports<br>
+<strong>Status:</strong> implemented system</p>
+</section>
+<section id="build-02-microbiome-system" class="level3">
+<h3 class="anchored" data-anchor-id="build-02-microbiome-system">Build 02 · Microbiome System</h3>
+<p><strong>System focus:</strong> microbial community analysis<br>
+<strong>Primary features:</strong> ASVs, OTUs, taxa, microbial pathways<br>
+<strong>Typical outputs:</strong> diversity summaries, taxonomic profiles, differential abundance results, biological interpretation reports<br>
+<strong>Status:</strong> implemented system</p>
+</section>
+<section id="build-03-proteomics-system" class="level3">
+<h3 class="anchored" data-anchor-id="build-03-proteomics-system">Build 03 · Proteomics System</h3>
+<p><strong>System focus:</strong> protein-level biological analysis<br>
+<strong>Primary features:</strong> proteins, peptides, protein groups, functional annotations<br>
+<strong>Typical outputs:</strong> differential protein abundance results, GO/pathway enrichment, protein-network interpretation, reproducible reports<br>
+<strong>Status:</strong> current addition / active implementation</p>
+</section>
+<section id="build-04-gwas-system" class="level3">
+<h3 class="anchored" data-anchor-id="build-04-gwas-system">Build 04 · GWAS System</h3>
+<p><strong>System focus:</strong> variant-level association analysis<br>
+<strong>Primary features:</strong> SNPs, genotypes, phenotypes, association statistics<br>
+<strong>Typical outputs:</strong> association results, Manhattan plots, candidate loci, variant interpretation summaries<br>
+<strong>Status:</strong> planned expansion</p>
+</section>
+<section id="build-05-single-cell-rna-seq-system" class="level3">
+<h3 class="anchored" data-anchor-id="build-05-single-cell-rna-seq-system">Build 05 · Single-cell RNA-Seq System</h3>
+<p><strong>System focus:</strong> cell-resolution transcriptomics<br>
+<strong>Primary features:</strong> cells, genes, clusters, marker genes, cell types<br>
+<strong>Typical outputs:</strong> clustering results, marker-gene tables, cell-type annotations, trajectory or state-level interpretation<br>
+<strong>Status:</strong> planned expansion</p>
+</section>
+<section id="build-06-multi-omics-integration-system" class="level3">
+<h3 class="anchored" data-anchor-id="build-06-multi-omics-integration-system">Build 06 · Multi-omics Integration System</h3>
+<p><strong>System focus:</strong> cross-domain biological integration<br>
+<strong>Primary features:</strong> harmonized samples, shared metadata, multi-layer molecular features<br>
+<strong>Typical outputs:</strong> integrated signatures, cross-omics associations, pathway-level synthesis, biological interpretation reports<br>
+<strong>Status:</strong> planned expansion</p>
+<hr>
+</section>
+</section>
+<section id="technology-ecosystem" class="level2">
+<h2 class="anchored" data-anchor-id="technology-ecosystem">Technology Ecosystem</h2>
 <p>Depending on the build, workflows may integrate:</p>
 <ul>
 <li>R</li>
 <li>Python</li>
 <li>Bioconductor</li>
 <li>Quarto</li>
-<li>Plotly</li>
-<li>QIIME2</li>
+<li>QIIME 2</li>
 <li>Scanpy</li>
+<li>Plotly</li>
 <li>GitHub Pages</li>
-<li>reproducible environments</li>
+<li>reproducible computational environments</li>
 </ul>
+<p>Technology choices are secondary to analytical reasoning. Tools may evolve, but the underlying system architecture remains consistent.</p>
 <hr>
 </section>
-<section id="cdi" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> CDI</h1>
-<p>Complex Data Insights (CDI)</p>
-<p>Systems over outputs.</p>
+<section id="workflow-philosophy" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-philosophy">Workflow Philosophy</h2>
+<p>Across all builds, Omics Systems emphasizes:</p>
+<ul>
+<li>systems over outputs</li>
+<li>interpretation over automation</li>
+<li>reproducibility over convenience</li>
+<li>transparency over complexity</li>
+<li>scientific reasoning over software execution</li>
+</ul>
+<p>The goal is to help analysts move beyond running workflows toward building analytical systems that can be understood, reproduced, communicated, and trusted.</p>
 
 
 </section>
@@ -465,13 +613,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -818,12 +967,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link" aria-label="index.html">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">index.html</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">index.html</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-rnaseq.html" class="pagination-link" aria-label="Build 01 · RNA-seq System">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Build 01 · RNA-seq System</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01-rnaseq.html" class="pagination-link" aria-label="Build 01 · RNA-Seq System">
+        <span class="nav-page-text"><span class="chapter-title">Build 01 · RNA-Seq System</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

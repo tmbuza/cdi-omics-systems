@@ -1,0 +1,281 @@
+# Build 03 · Proteomics System
+
+A structured proteomics analysis system for reproducible protein-level analysis, biological interpretation, and reporting.
+
+The Proteomics System is the current addition to the CDI Omics Systems Architecture. It extends the architecture beyond transcript-level and community-level analysis into protein abundance, differential protein analysis, functional annotation, pathway interpretation, and reproducible reporting.
+
+---
+
+## Biological Focus
+
+Proteomics analysis enables the study of:
+
+- protein abundance
+- differential protein expression or abundance
+- protein identifiers and annotations
+- biological pathways
+- Gene Ontology terms
+- protein networks
+- functional interpretation
+
+The goal is not simply to identify statistically significant proteins, but to understand how protein-level changes support biological mechanisms, pathway-level patterns, and defensible scientific conclusions.
+
+---
+
+## Why Proteomics?
+
+Proteomics is an important addition to the Omics Systems Architecture because proteins are closer to biological function than transcripts alone.
+
+While RNA-Seq measures transcript-level activity and microbiome analysis evaluates microbial community structure, proteomics focuses on the molecules that often execute biological processes directly.
+
+The Proteomics System introduces analytical concepts such as protein identifier cleaning, missing-value assessment, differential protein abundance, GO and pathway enrichment, protein interaction networks, and results-first biological interpretation.
+
+---
+
+## Relationship to the Omics Systems Architecture
+
+All Omics System Builds share a common analytical foundation.
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+The Proteomics System extends this architecture by transforming protein abundance tables or differential protein results into interpretable biological evidence that can be quality checked, statistically evaluated, functionally annotated, and reported within a reproducible analytical framework.
+
+---
+
+## Proteomics System Architecture
+
+```{mermaid}
+flowchart TD
+
+    A[Proteomics Result Tables]
+    B[Input Assessment]
+    C[Quality Control]
+    D[Protein Identifier Cleaning]
+    E[Differential Protein Abundance]
+    F[Protein Ranking and Filtering]
+    G[GO and Pathway Enrichment]
+    H[Protein Network Interpretation]
+    I[Biological Interpretation]
+    J[Reproducible Reporting]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+
+    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
+    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
+    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
+    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
+    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
+    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
+    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
+    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
+    style J fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a
+```
+
+---
+
+## System Components
+
+### Input Assessment
+
+Input assessment determines the structure and meaning of the proteomics data table.
+
+Common input types include:
+
+- protein abundance tables
+- peptide abundance tables
+- protein group tables
+- differential protein abundance results
+- annotation or enrichment result tables
+
+This step identifies key columns such as protein identifiers, gene symbols, protein names, abundance values, log fold changes, p-values, adjusted p-values, and comparison labels.
+
+### Quality Control
+
+Quality control evaluates whether the proteomics results are suitable for downstream interpretation.
+
+Common checks include:
+
+- missing-value assessment
+- protein identifier completeness
+- sample or comparison consistency
+- abundance distribution review
+- duplicate protein identifier detection
+- significance column validation
+
+### Protein Identifier Cleaning
+
+Protein identifier cleaning prepares protein IDs for annotation, enrichment, and biological interpretation.
+
+This may include:
+
+- standardizing protein identifiers
+- separating protein groups
+- mapping protein IDs to gene symbols
+- checking identifier compatibility with enrichment tools
+- preparing clean annotation-ready tables
+
+### Differential Protein Abundance
+
+Differential protein abundance analysis identifies proteins associated with biological conditions or experimental contrasts.
+
+For a results-first implementation, this step often begins from an existing differential protein table containing:
+
+- protein identifier
+- gene symbol
+- log2 fold change
+- p-value
+- adjusted p-value
+- comparison or contrast
+
+### Protein Ranking and Filtering
+
+Protein ranking and filtering prioritize proteins for interpretation.
+
+Common criteria include:
+
+- adjusted p-value threshold
+- log2 fold-change threshold
+- direction of change
+- biological relevance
+- annotation availability
+
+### GO and Pathway Enrichment
+
+Functional enrichment translates protein-level results into broader biological themes.
+
+Common interpretation layers include:
+
+- Gene Ontology biological process
+- molecular function
+- cellular component
+- pathway enrichment
+- functional category summaries
+
+### Protein Network Interpretation
+
+Protein network interpretation evaluates how differentially abundant proteins relate to each other biologically.
+
+Common approaches include:
+
+- protein-protein interaction networks
+- functional modules
+- pathway-linked clusters
+- network-supported biological hypotheses
+
+### Biological Interpretation
+
+Biological interpretation connects statistical evidence, protein annotation, enrichment patterns, and network context into a coherent scientific explanation.
+
+The goal is to move from a list of proteins toward a defensible biological narrative.
+
+### Reproducible Reporting
+
+Reproducible reporting connects workflow decisions, code, outputs, interpretation, and conclusions in a transparent analytical document.
+
+Typical tools include:
+
+- Quarto
+- GitHub
+- reproducible computational environments
+
+---
+
+## Core Technologies
+
+Examples of technologies commonly used within the Proteomics System include:
+
+- R
+- tidyverse
+- readr
+- dplyr
+- stringr
+- tibble
+- ggplot2
+- clusterProfiler
+- STRING
+- Quarto
+- GitHub
+
+These technologies support the workflow, but the primary focus of the Proteomics System is protein-level reasoning, functional interpretation, and reproducibility.
+
+---
+
+## Expected Outputs
+
+A complete Proteomics System should produce:
+
+- proteomics input inspection summaries
+- detected column summaries
+- missing-value reports
+- cleaned protein identifier tables
+- ranked protein tables
+- filtered differential protein results
+- GO or pathway enrichment summaries
+- protein network interpretation outputs
+- biological interpretation evidence tables
+- reproducible analytical reports
+
+---
+
+## Status
+
+**Current addition / active implementation**
+
+The Proteomics System is the current addition to the CDI Omics Systems Architecture. It expands the ecosystem from RNA-Seq and Microbiome systems into protein-level biological analysis and interpretation.
+
+---
+
+## Live Build
+
+<https://proteomics.complexdatainsights.com>
+
+---
+
+## Key Takeaway
+
+The Proteomics System illustrates the Omics Systems approach to protein-level biological analysis.
+
+Rather than treating differential protein tables, protein identifiers, enrichment results, networks, and reporting as separate activities, the system connects them into a unified analytical framework.
+
+The result is a workflow that links:
+
+```text
+proteomics result tables
+      ↓
+protein-level statistical evidence
+      ↓
+functional and network interpretation
+      ↓
+reproducible reporting
+```
+
+in a transparent, reproducible, and scientifically defensible manner.

@@ -1,80 +1,246 @@
 # Build 02 · Microbiome System
 
-A structured microbiome workflow for reproducible ecological analysis and interpretation.
+A structured microbiome analysis system for reproducible ecological analysis, biological interpretation, and reporting.
 
-## System Path
+The Microbiome System demonstrates how microbial sequencing data can be transformed into ecological and biological insights through a structured and reproducible analytical framework.
+
+---
+
+## Biological Focus
+
+Microbiome analysis enables the study of:
+
+- microbial community composition
+- ecological diversity
+- community structure
+- taxonomic profiles
+- functional potential
+- host–microbe relationships
+- ecological interpretation
+
+The goal is not simply to describe microbial communities, but to understand how ecological patterns relate to biological and environmental processes.
+
+---
+
+## Why Microbiome?
+
+The Microbiome System serves as a complementary implementation of the Omics Systems Architecture.
+
+While RNA-Seq focuses on gene expression, microbiome analysis focuses on microbial communities and ecological relationships.
+
+As a result, the Microbiome System introduces analytical concepts such as diversity analysis, ecological distance measures, community structure, compositionality, taxonomic interpretation, and ecological reasoning while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.
+
+---
+
+## Relationship to the Omics Systems Architecture
+
+All Omics System Builds share a common analytical foundation.
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+The Microbiome System extends this architecture by transforming microbial sequencing reads into community profiles that can be explored, statistically evaluated, ecologically interpreted, and reported within a reproducible analytical framework.
+
+---
+
+## Microbiome System Architecture
 
 ```{mermaid}
-
 flowchart TD
 
     A[FASTQ Files]
-
     B[Quality Control]
-
     C[Denoising and ASV Inference]
-
     D[Taxonomy Assignment]
-
     E[Diversity Analysis]
-
     F[Community Structure]
-
     G[Differential Abundance]
-
     H[Ecological Interpretation]
-
-    I[Quarto Reporting]
+    I[Reproducible Reporting]
 
     A --> B
-
     B --> C
-
     C --> D
-
     D --> E
-
     E --> F
-
     F --> G
-
     G --> H
-
     H --> I
 
     style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
-
     style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
-
     style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
-
     style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
-
     style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
-
     style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
-
     style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
-
     style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
-
     style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
-
 ```
 
-## Planned Tools
+---
+
+## System Components
+
+### Quality Control
+
+Quality control evaluates sequencing quality, sample integrity, contamination, read depth, and filtering requirements before downstream ecological analysis begins.
+
+### Denoising and ASV Inference
+
+Denoising removes sequencing errors and infers high-resolution amplicon sequence variants (ASVs) that represent biological sequences within the community.
+
+Typical tools include:
+
+- DADA2
+- QIIME 2
+
+### Taxonomy Assignment
+
+Taxonomy assignment classifies ASVs against reference databases to characterize microbial community composition.
+
+Common reference databases include:
+
+- SILVA
+- Greengenes
+- GTDB
+
+### Diversity Analysis
+
+Diversity analysis evaluates microbial richness, evenness, and community dissimilarity.
+
+Common analyses include:
+
+- alpha diversity
+- beta diversity
+- rarefaction assessment
+- ecological distance metrics
+
+### Community Structure
+
+Community structure analysis evaluates relationships among microbial communities across samples, groups, environments, or host conditions.
+
+Common approaches include:
+
+- ordination
+- clustering
+- PERMANOVA
+- dispersion analysis
+
+### Differential Abundance
+
+Differential abundance analysis identifies microbial taxa or features associated with biological or environmental conditions.
+
+This stage requires careful consideration of compositionality, normalization, sparsity, multiple testing, and statistical assumptions.
+
+### Ecological Interpretation
+
+Ecological interpretation translates statistical patterns into biological and ecological understanding.
+
+Common areas of interpretation include:
+
+- host–microbe interactions
+- environmental influences
+- community dynamics
+- microbial shifts across conditions
+- ecological hypotheses
+
+### Reproducible Reporting
+
+Reproducible reporting connects workflow decisions, analytical outputs, interpretation, and conclusions within a transparent analytical document.
+
+Typical tools include:
+
+- Quarto
+- GitHub
+- reproducible computational environments
+
+---
+
+## Core Technologies
+
+Examples of technologies commonly used within the Microbiome System include:
 
 - QIIME 2
+- Mothur
 - DADA2
 - phyloseq
 - vegan
 - ggplot2
 - Quarto
+- GitHub
+
+These technologies support the workflow, but the primary focus of the Microbiome System is ecological reasoning, biological interpretation, and reproducibility.
+
+---
+
+## Expected Outputs
+
+A complete Microbiome System should produce:
+
+- quality control summaries
+- validated sequencing inputs
+- ASV or OTU feature tables
+- taxonomy tables
+- sample metadata checks
+- alpha diversity summaries
+- beta diversity and ordination outputs
+- community structure results
+- differential abundance results
+- ecological interpretation summaries
+- reproducible analytical reports
+
+---
 
 ## Status
 
-Active flagship build.
+**Active build**
+
+The Microbiome System serves as the reference implementation for ecological and community-based analysis within the Omics Systems Architecture.
+
+---
 
 ## Live Build
 
-[microbiome.complexdatainsights.com](https://microbiome.complexdatainsights.com)
+<https://microbiome.complexdatainsights.com>
+
+---
+
+## Key Takeaway
+
+The Microbiome System illustrates the Omics Systems approach to microbial community analysis.
+
+Rather than treating sequence processing, diversity analysis, community structure assessment, ecological interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.
+
+The result is a workflow that links:
+
+```text
+microbial sequencing data
+      ↓
+ecological evidence
+      ↓
+biological interpretation
+      ↓
+reproducible reporting
+```
+
+in a transparent, reproducible, and scientifically defensible manner.

@@ -1,24 +1,28 @@
-# CDI Multiomics Systems
+# CDI Multiomics Ecosystem
 
 Structured omics system architectures for reproducible biological data analysis, interpretation, and reporting.
+
+This repository hosts the **CDI Omics Systems** guide: a summary implementation of the **Omics Systems Architecture (OSA)** across major biological data domains.
 
 ---
 
 ## Overview
 
-CDI Multiomics Systems is an evolving ecosystem of structured omics workflows designed to connect:
+CDI Multiomics Ecosystem is an evolving collection of structured omics systems designed to connect:
 
-- raw biological data
+- biological questions
+- data generation
 - analytical processing
+- quality control
 - statistical reasoning
-- interpretation
+- biological interpretation
 - reproducible reporting
 
 The focus is not only on running tools, but on building complete analytical systems that support transparent and defensible biological insight.
 
 ---
 
-# An Evolving Multiomics Ecosystem
+## Omics Systems Architecture
 
 CDI Omics Systems is designed as a modular and continuously expanding ecosystem of reproducible analytical systems.
 
@@ -28,134 +32,167 @@ Each build represents a connected workflow architecture focused on:
 - workflow transparency
 - interpretation-first analysis
 - systems-oriented biological reasoning
+- defensible scientific reporting
 
-Some builds are actively expanding as the ecosystem evolves.
+The current implementation is represented by RNA-Seq, Microbiome, and Proteomics systems. GWAS, Single-cell RNA-Seq, and Multi-omics Integration are included as planned expansion systems.
 
 ---
 
-# Systems Over Outputs
+## Systems Over Outputs
 
 Many workflows stop at generating outputs.
 
-CDI Multiomics Systems emphasizes:
+CDI Omics Systems emphasizes:
 
 ```text
-Data
-→ Processing
-→ Exploration
-→ Statistical analysis
-→ Interpretation
-→ Reporting
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
 ```
 
-Each build is designed to function as a connected system rather than an isolated tutorial.
+Each build is designed to function as a connected analytical system rather than an isolated tutorial.
 
 ---
 
-# Multiomics System Builds
+## Omics System Builds
 
-## Build 01 · RNA-seq System
+### Build 01 · RNA-Seq System
 
 End-to-end transcriptomics workflows integrating:
 
-- FastQC
-- MultiQC
-- Salmon / STAR
-- featureCounts
-- DESeq2
-- exploration and visualization
+- quality assessment
+- read processing
+- quantification or alignment
+- count matrix generation
+- exploratory analysis
+- differential expression
+- functional interpretation
 - Quarto reporting
 
-### Status
+**Status:** Active flagship build
 
-Active flagship build.
-
-### Live Build
-
-https://rnaseq.complexdatainsights.com
+**Live Build:**  
+<https://rnaseq.complexdatainsights.com>
 
 ---
 
-## Build 02 · Microbiome System
+### Build 02 · Microbiome System
 
 Structured microbiome analysis systems integrating:
 
-- denoising
+- quality control
+- denoising and ASV inference
 - taxonomy assignment
-- ecological analysis
 - diversity analysis
-- interpretation workflows
+- community structure analysis
+- differential abundance
+- ecological interpretation
+- reproducible reporting
 
-### Status
+**Status:** Active build
 
-Active build.
-
-### Live Build
-
-https://microbiome.complexdatainsights.com
+**Live Build:**  
+<https://microbiome.complexdatainsights.com>
 
 ---
 
-## Build 03 · GWAS System
+### Build 03 · Proteomics System
 
-Genome-wide association workflows integrating:
+Structured proteomics analysis systems integrating:
 
-- genotype quality control
-- population structure
+- proteomics result table inspection
+- quality control
+- protein identifier cleaning
+- differential protein abundance
+- protein ranking and filtering
+- GO and pathway enrichment
+- protein network interpretation
+- reproducible reporting
+
+**Status:** Current addition / active implementation
+
+**Live Build:**  
+<https://proteomics.complexdatainsights.com>
+
+---
+
+### Build 04 · GWAS System
+
+Genome-wide association analysis architecture integrating:
+
+- genotype and phenotype inputs
+- sample quality control
+- variant quality control
+- population structure assessment
 - association testing
-- variant interpretation
+- Manhattan and QQ plots
+- variant prioritization
+- biological interpretation
 
-### Status
+**Status:** Planned expansion
 
-Active build.
-
-### Live Build
-
-https://gwas.complexdatainsights.com
+**Live Build:**  
+<https://gwas.complexdatainsights.com>
 
 ---
 
-## Build 04 · Single-cell RNA-seq System
+### Build 05 · Single-cell RNA-Seq System
 
-Single-cell systems integrating:
+Single-cell transcriptomics architecture integrating:
 
+- cell and gene quality control
 - normalization
-- clustering
 - dimensional reduction
-- annotation
+- clustering
+- marker detection
+- cell annotation
 - cellular interpretation
+- reproducible reporting
 
-### Status
+**Status:** Planned expansion
 
-Active build.
-
-### Live Build
-
-https://singlecell.complexdatainsights.com
+**Live Build:**  
+<https://singlecell.complexdatainsights.com>
 
 ---
 
-## Build 05 · Multi-omics Integration System
+### Build 06 · Multi-omics Integration System
 
 Integrated systems connecting:
 
 - transcriptomics
 - microbiome
-- clinical metadata
-- statistical modeling
-- interpretation layers
+- proteomics
+- GWAS
+- single-cell analysis
+- clinical and phenotype metadata
+- cross-domain modeling
+- systems-level interpretation
 
-### Status
+**Status:** Planned expansion / integrative architecture
 
-Expanding build.
-
-### Live Build
-
-https://multiomics.complexdatainsights.com
+**Live Build:**  
+<https://multiomics.complexdatainsights.com>
 
 ---
 
-# Technology Ecosystem
+## Technology Ecosystem
 
 Depending on the build, workflows may integrate:
 
@@ -163,25 +200,35 @@ Depending on the build, workflows may integrate:
 - Python
 - Bioconductor
 - Quarto
-- Plotly
-- QIIME2
+- tidyverse
+- DESeq2
+- QIIME 2
+- phyloseq
+- vegan
 - Scanpy
+- Seurat
+- PLINK
+- STRING
 - GitHub Pages
-- reproducible environments
+- reproducible computational environments
+
+Technology choices are secondary to analytical reasoning. Tools may evolve, but the underlying system architecture remains consistent.
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```text
 .
+├── _quarto.yml
 ├── index.qmd
 ├── 00-preface-and-overview.qmd
 ├── 01-rnaseq.qmd
 ├── 02-microbiome.qmd
-├── 03-gwas.qmd
-├── 04-single-cell.qmd
-├── 05-multiomics.qmd
+├── 03-proteomics.qmd
+├── 04-gwas.qmd
+├── 05-single-cell.qmd
+├── 06-multiomics-integration.qmd
 ├── 999-appendix.qmd
 ├── assets/
 ├── docs/
@@ -190,14 +237,14 @@ Depending on the build, workflows may integrate:
 
 ---
 
-# Website
+## Website
 
-https://multiomics.complexdatainsights.com
+<https://multiomics.complexdatainsights.com>
 
 ---
 
-# CDI
+## CDI
 
-Complex Data Insights (CDI)
+**Complex Data Insights (CDI)**
 
 Systems over outputs.

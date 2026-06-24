@@ -1,0 +1,260 @@
+# Build 04 · GWAS System
+
+A structured genome-wide association analysis system for reproducible variant association analysis, interpretation, and reporting.
+
+The GWAS System is included as a planned expansion within the CDI Omics Systems Architecture. It demonstrates how genotype data can be transformed into statistically and biologically meaningful insights through a structured and reproducible analytical framework.
+
+---
+
+## Biological Focus
+
+Genome-wide association studies (GWAS) enable the study of:
+
+- genetic variation
+- genotype–phenotype relationships
+- population structure
+- trait-associated loci
+- variant prioritization
+- biological interpretation
+
+The goal is not simply to identify statistically significant variants, but to understand how genetic variation contributes to biological traits, disease processes, and biological mechanisms.
+
+---
+
+## Why GWAS?
+
+The GWAS System serves as the expansion architecture for population-scale genetic association analysis within the Omics Systems framework.
+
+While RNA-Seq focuses on gene expression, microbiome analysis focuses on microbial communities, and proteomics focuses on protein-level biological changes, GWAS focuses on identifying associations between genetic variants and phenotypic traits.
+
+As a result, the GWAS System introduces analytical concepts such as sample-level genotype quality control, variant filtering, population structure correction, large-scale association testing, variant prioritization, and genetic interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.
+
+---
+
+## Relationship to the Omics Systems Architecture
+
+All Omics System Builds share a common analytical foundation.
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+The GWAS System extends this architecture by transforming genotype and phenotype data into association evidence that can be statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.
+
+---
+
+## GWAS System Architecture
+
+```{mermaid}
+flowchart TD
+
+    A[Genotype Data]
+    B[Sample QC]
+    C[Variant QC]
+    D[Population Structure]
+    E[Association Testing]
+    F[Manhattan and QQ Plots]
+    G[Variant Prioritization]
+    H[Biological Interpretation]
+    I[Reproducible Reporting]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+
+    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
+    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
+    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
+    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
+    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
+    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
+    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
+    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
+```
+
+---
+
+## System Components
+
+### Genotype and Phenotype Inputs
+
+GWAS begins with genotype data linked to phenotype and sample metadata.
+
+Common input elements include:
+
+- genotype files
+- sample identifiers
+- phenotype tables
+- covariates
+- population or ancestry information
+- study design metadata
+
+### Sample Quality Control
+
+Sample-level quality control evaluates data completeness, relatedness, ancestry, sex checks, heterozygosity, contamination signals, and overall sample integrity before association testing.
+
+### Variant Quality Control
+
+Variant-level quality control evaluates genotype quality and filtering criteria.
+
+Common assessments include:
+
+- call rate
+- minor allele frequency
+- Hardy–Weinberg equilibrium
+- variant missingness
+- allele coding consistency
+
+### Population Structure
+
+Population structure analysis identifies genetic stratification that could confound association results.
+
+Common approaches include:
+
+- principal component analysis (PCA)
+- ancestry estimation
+- relatedness assessment
+- covariate adjustment
+
+### Association Testing
+
+Association testing evaluates relationships between genetic variants and phenotypic traits.
+
+The choice of statistical model depends on the study design, phenotype type, population structure, relatedness, and available covariates.
+
+### Manhattan and QQ Plots
+
+Visualization helps evaluate association signals and assess potential inflation or systematic bias.
+
+Common visualizations include:
+
+- Manhattan plots
+- QQ plots
+
+### Variant Prioritization
+
+Variant prioritization identifies loci that warrant further investigation.
+
+Common considerations include:
+
+- effect size
+- statistical significance
+- biological relevance
+- genomic context
+- nearby genes
+- prior evidence
+
+### Biological Interpretation
+
+Biological interpretation translates association signals into biological understanding.
+
+Common activities include:
+
+- gene mapping
+- pathway analysis
+- functional annotation
+- literature integration
+- trait biology review
+
+### Reproducible Reporting
+
+Reproducible reporting connects analytical decisions, quality control thresholds, association results, visualizations, interpretation, and conclusions within a transparent analytical document.
+
+Typical tools include:
+
+- Quarto
+- GitHub
+- reproducible computational environments
+
+---
+
+## Core Technologies
+
+Examples of technologies commonly used within the GWAS System include:
+
+- PLINK
+- R
+- Python
+- PCA and population structure tools
+- locus visualization tools
+- Quarto
+- GitHub
+
+These technologies support the workflow, but the primary focus of the GWAS System is genetic reasoning, variant interpretation, and reproducibility.
+
+---
+
+## Expected Outputs
+
+A complete GWAS System should produce:
+
+- sample quality control summaries
+- variant quality control summaries
+- filtered genotype datasets
+- population structure outputs
+- association result tables
+- Manhattan plots
+- QQ plots
+- prioritized variant or locus tables
+- biological interpretation summaries
+- reproducible analytical reports
+
+---
+
+## Status
+
+**Planned expansion**
+
+The GWAS System is included as an expansion architecture for population-scale genetic association analysis within the CDI Omics Systems framework.
+
+---
+
+## Live Build
+
+<https://gwas.complexdatainsights.com>
+
+---
+
+## Key Takeaway
+
+The GWAS System illustrates the Omics Systems approach to genetic association analysis.
+
+Rather than treating quality control, population structure assessment, association testing, variant prioritization, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.
+
+The result is a workflow that links:
+
+```text
+genotype data
+      ↓
+association evidence
+      ↓
+biological interpretation
+      ↓
+reproducible reporting
+```
+
+in a transparent, reproducible, and scientifically defensible manner.

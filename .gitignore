@@ -60,3 +60,5 @@ Thumbs.db
 # Keep docs/ because GitHub Pages uses it
 # docs/
 /.quarto/
+
+**/*.quarto_ipynb

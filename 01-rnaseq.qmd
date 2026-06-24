@@ -1,23 +1,77 @@
-# Build 01 · RNA-seq System
+# Build 01 · RNA-Seq System
 
-End-to-end RNA-seq workflow for reproducible transcriptomics analysis and interpretation.
+End-to-end RNA-Seq workflows for reproducible transcriptomics analysis, interpretation, and reporting.
 
-## System Path
+The RNA-Seq System is the flagship implementation of the Omics Systems Architecture. It demonstrates how raw sequencing reads can be transformed into biologically meaningful insights through a structured and reproducible analytical workflow.
+
+---
+
+## Biological Focus
+
+RNA-Seq enables the study of:
+
+- gene expression patterns
+- differential expression
+- transcript abundance
+- biological pathways
+- functional interpretation
+
+The goal is not simply to identify statistically significant genes, but to support transparent and defensible biological conclusions.
+
+---
+
+## Why RNA-Seq?
+
+RNA-Seq serves as the flagship Omics System Build because it contains many of the core analytical concepts shared across modern sequencing-based studies, including quality assessment, feature generation, statistical modeling, interpretation, and reproducible reporting.
+
+As a result, the RNA-Seq System provides a foundation for understanding the broader Omics Systems framework.
+
+---
+
+## Relationship to the Omics Systems Architecture
+
+All Omics System Builds share a common analytical foundation.
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+The RNA-Seq System extends this architecture by transforming sequencing reads into gene expression measurements that can be explored, statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.
+
+---
+
+## RNA-Seq System Architecture
 
 ```{mermaid}
 flowchart TD
 
     A[FASTQ Files]
-    B[FastQC]
-    C[Trimming if Needed]
+    B[Quality Assessment]
+    C[Read Processing]
     D[Quantification or Alignment]
-    E[MultiQC Aggregation]
-    F[Count Matrix]
-    G[DESeq2]
-    H[Exploration]
-    I[Differential Expression]
-    J[Interpretation]
-    K[Quarto Reporting]
+    E[Count Matrix Generation]
+    F[Exploratory Analysis]
+    G[Differential Expression]
+    H[Functional Interpretation]
+    I[Reproducible Reporting]
 
     A --> B
     B --> C
@@ -27,23 +81,73 @@ flowchart TD
     F --> G
     G --> H
     H --> I
-    I --> J
-    J --> K
-
-    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
-    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
-    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
-    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
-    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
-    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
-    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
-    style H fill:#fde68a,stroke:#ca8a04,stroke-width:2px,color:#0f172a
-    style I fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
-    style J fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#0f172a
-    style K fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
 ```
 
-## Core Tools
+---
+
+## System Components
+
+### Quality Assessment
+
+Quality assessment evaluates sequencing quality, adapter contamination, library complexity, and overall data integrity before downstream analysis begins.
+
+### Read Processing
+
+Read processing prepares sequencing reads for quantification or alignment through activities such as adapter removal, quality trimming, filtering, and organization of analysis-ready FASTQ files.
+
+### Quantification and Alignment
+
+Quantification and alignment transform sequencing reads into transcript-level or gene-level abundance estimates.
+
+Typical tools include:
+
+- Salmon
+- STAR
+- featureCounts
+
+### Count Matrix Generation
+
+The count matrix is the central analytical object for downstream RNA-Seq analysis. It connects samples, genes, expression measurements, and experimental metadata.
+
+### Exploratory Analysis
+
+Exploratory analysis evaluates sample-level structure before formal differential expression testing.
+
+Common analyses include:
+
+- sample clustering
+- principal component analysis (PCA)
+- outlier detection
+- batch effect assessment
+- sample metadata validation
+
+### Differential Expression Analysis
+
+Differential expression analysis identifies genes associated with experimental conditions or biological contrasts.
+
+Typical tools include:
+
+- DESeq2
+
+### Functional Interpretation
+
+Functional interpretation translates statistical findings into biological understanding through pathway analysis, gene set analysis, and biological context evaluation.
+
+### Reproducible Reporting
+
+Reproducible reporting connects workflow decisions, code, outputs, interpretation, and conclusions in a transparent analytical document.
+
+Typical tools include:
+
+- Quarto
+- GitHub
+- reproducible computational environments
+
+---
+
+## Core Technologies
+
+The RNA-Seq System may integrate:
 
 - FastQC
 - MultiQC
@@ -52,11 +156,57 @@ flowchart TD
 - featureCounts
 - DESeq2
 - Quarto
+- GitHub
+
+These technologies support the workflow, but the primary focus of the RNA-Seq System is analytical reasoning, interpretation, and reproducibility.
+
+---
+
+## Expected Outputs
+
+A complete RNA-Seq System should produce:
+
+- quality control summaries
+- processed or validated sequencing inputs
+- transcript-level or gene-level quantification outputs
+- count matrices
+- sample-level exploratory plots
+- differential expression results
+- functional interpretation summaries
+- reproducible analytical reports
+
+---
 
 ## Status
 
-Active flagship build.
+**Active flagship build**
+
+The RNA-Seq System serves as the primary reference implementation of the Omics Systems Architecture and provides the foundation for understanding how the broader ecosystem approaches reproducible biological data analysis.
+
+---
 
 ## Live Build
 
-[rnaseq.complexdatainsights.com](https://rnaseq.complexdatainsights.com)
+<https://rnaseq.complexdatainsights.com>
+
+---
+
+## Key Takeaway
+
+The RNA-Seq System illustrates the Omics Systems approach to transcriptomics analysis.
+
+Rather than treating quality control, quantification, differential expression, interpretation, and reporting as separate activities, the system connects them into a single analytical framework.
+
+The result is a workflow that links:
+
+```text
+sequencing data
+      ↓
+statistical evidence
+      ↓
+biological interpretation
+      ↓
+reproducible reporting
+```
+
+in a transparent, reproducible, and scientifically defensible manner.

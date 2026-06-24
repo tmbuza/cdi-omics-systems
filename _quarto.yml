@@ -15,9 +15,10 @@ book:
     - 00-preface-and-overview.qmd
     - 01-rnaseq.qmd
     - 02-microbiome.qmd
-    - 03-gwas.qmd
-    - 04-single-cell.qmd
-    # - 05-multiomics.qmd
+    - 03-proteomics.qmd
+    - 04-gwas.qmd
+    - 05-single-cell.qmd
+    - 06-multiomics-integration.qmd
    
   appendices:
     - 999-appendix.qmd
@@ -27,7 +28,7 @@ format:
   html:
     toc: true
     toc-depth: 3
-    number-sections: true
+    number-sections: false
     number-depth: 2
     smooth-scroll: true
     anchor-sections: true

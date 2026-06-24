@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Build 04 · Single-cell RNA-seq System – CDI Omics Systems</title>
+<title>6&nbsp; Build 04 · Single-cell RNA-Seq System – CDI Omics Systems</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -65,7 +68,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./999-appendix.html" rel="next">
+<link href="./05-multiomics-integration.html" rel="next">
 <link href="./03-gwas.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -73,10 +76,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-231ef2f9d4ce3268f31ef752336c15d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d8ad657b878717df1156ab40fed854c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -123,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-single-cell.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-seq System</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-single-cell.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-Seq System</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -163,7 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-rnaseq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Build 01 · RNA-seq System</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Build 01 · RNA-Seq System</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -181,7 +184,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-single-cell.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-seq System</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-Seq System</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-multiomics-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Build 05 · Multi-omics Integration System</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -211,9 +220,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#system-path" id="toc-system-path" class="nav-link active" data-scroll-target="#system-path"><span class="header-section-number">6.1</span> System Path</a></li>
-  <li><a href="#planned-tools" id="toc-planned-tools" class="nav-link" data-scroll-target="#planned-tools"><span class="header-section-number">6.2</span> Planned Tools</a></li>
-  <li><a href="#live-build" id="toc-live-build" class="nav-link" data-scroll-target="#live-build"><span class="header-section-number">6.4</span> Live Build</a></li>
+  <li><a href="#biological-focus" id="toc-biological-focus" class="nav-link active" data-scroll-target="#biological-focus"><span class="header-section-number">6.1</span> Biological Focus</a></li>
+  <li><a href="#why-single-cell-rna-seq" id="toc-why-single-cell-rna-seq" class="nav-link" data-scroll-target="#why-single-cell-rna-seq"><span class="header-section-number">6.2</span> Why Single-cell RNA-Seq?</a></li>
+  <li><a href="#relationship-to-the-omics-systems-architecture" id="toc-relationship-to-the-omics-systems-architecture" class="nav-link" data-scroll-target="#relationship-to-the-omics-systems-architecture"><span class="header-section-number">6.3</span> Relationship to the Omics Systems Architecture</a></li>
+  <li><a href="#single-cell-rna-seq-system-architecture" id="toc-single-cell-rna-seq-system-architecture" class="nav-link" data-scroll-target="#single-cell-rna-seq-system-architecture"><span class="header-section-number">6.4</span> Single-cell RNA-Seq System Architecture</a></li>
+  <li><a href="#system-components" id="toc-system-components" class="nav-link" data-scroll-target="#system-components"><span class="header-section-number">6.5</span> System Components</a>
+  <ul class="collapse">
+  <li><a href="#cell-and-gene-quality-control" id="toc-cell-and-gene-quality-control" class="nav-link" data-scroll-target="#cell-and-gene-quality-control">Cell and Gene Quality Control</a></li>
+  <li><a href="#normalization" id="toc-normalization" class="nav-link" data-scroll-target="#normalization">Normalization</a></li>
+  <li><a href="#dimensional-reduction" id="toc-dimensional-reduction" class="nav-link" data-scroll-target="#dimensional-reduction">Dimensional Reduction</a></li>
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">Clustering</a></li>
+  <li><a href="#marker-detection" id="toc-marker-detection" class="nav-link" data-scroll-target="#marker-detection">Marker Detection</a></li>
+  <li><a href="#cell-annotation" id="toc-cell-annotation" class="nav-link" data-scroll-target="#cell-annotation">Cell Annotation</a></li>
+  <li><a href="#biological-interpretation" id="toc-biological-interpretation" class="nav-link" data-scroll-target="#biological-interpretation">Biological Interpretation</a></li>
+  <li><a href="#reproducible-reporting" id="toc-reproducible-reporting" class="nav-link" data-scroll-target="#reproducible-reporting">Reproducible Reporting</a></li>
+  </ul></li>
+  <li><a href="#core-technologies" id="toc-core-technologies" class="nav-link" data-scroll-target="#core-technologies"><span class="header-section-number">6.6</span> Core Technologies</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status"><span class="header-section-number">6.7</span> Status</a></li>
+  <li><a href="#live-build" id="toc-live-build" class="nav-link" data-scroll-target="#live-build"><span class="header-section-number">6.8</span> Live Build</a></li>
+  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway"><span class="header-section-number">6.9</span> Key Takeaway</a></li>
   </ul>
 </nav>
     </div>
@@ -222,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-seq System</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-Seq System</span></h1>
 </div>
 
 
@@ -233,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 2026</p>
+      <p class="date">Jun 2026</p>
     </div>
   </div>
   
@@ -245,42 +270,90 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A structured single-cell workflow for cell-level transcriptomic analysis and interpretation.</p>
-<section id="system-path" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="system-path"><span class="header-section-number">6.1</span> System Path</h2>
+<p>A structured single-cell transcriptomics system for reproducible cell-level analysis, interpretation, and reporting.</p>
+<p>The Single-cell RNA-Seq System demonstrates how cell-level expression measurements can be transformed into biological insights through a structured and reproducible analytical framework.</p>
+<hr>
+<section id="biological-focus" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="biological-focus"><span class="header-section-number">6.1</span> Biological Focus</h2>
+<p>Single-cell RNA-Seq analysis enables the study of:</p>
+<ul>
+<li>cellular heterogeneity</li>
+<li>cell populations</li>
+<li>cell states</li>
+<li>developmental trajectories</li>
+<li>marker genes</li>
+<li>cellular interpretation</li>
+</ul>
+<p>The goal is not simply to identify clusters of cells, but to understand the biological processes, cell types, and cellular states that drive observed patterns.</p>
+<hr>
+</section>
+<section id="why-single-cell-rna-seq" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="why-single-cell-rna-seq"><span class="header-section-number">6.2</span> Why Single-cell RNA-Seq?</h2>
+<p>The Single-cell RNA-Seq System serves as the reference implementation for cell-level transcriptomic analysis within the Omics Systems framework.</p>
+<p>While bulk RNA-Seq evaluates average gene expression across samples, single-cell RNA-Seq enables the investigation of individual cells and cellular diversity.</p>
+<p>As a result, the Single-cell RNA-Seq System introduces analytical concepts such as cellular heterogeneity, clustering, cell annotation, and marker-based interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.</p>
+<hr>
+</section>
+<section id="relationship-to-the-omics-systems-architecture" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="relationship-to-the-omics-systems-architecture"><span class="header-section-number">6.3</span> Relationship to the Omics Systems Architecture</h2>
+<p>All Omics System Builds share a common analytical foundation.</p>
+<pre class="text"><code>Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+NGS Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting</code></pre>
+<p>The Single-cell RNA-Seq System extends this architecture by transforming cell-level expression measurements into cellular evidence that can be explored, statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.</p>
+<hr>
+</section>
+<section id="single-cell-rna-seq-system-architecture" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="single-cell-rna-seq-system-architecture"><span class="header-section-number">6.4</span> Single-cell RNA-Seq System Architecture</h2>
 <div class="cell" data-layout-align="default">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    A[Raw Counts]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    B[Cell and Gene QC]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    C[Normalization]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    D[Dimensional Reduction]</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    E[Clustering]</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    F[Marker Detection]</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    G[Cell Annotation]</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    H[Biological Interpretation]</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    I[Reporting]</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    A --&gt; B</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    B --&gt; C</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    C --&gt; D</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    D --&gt; E</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    E --&gt; F</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    F --&gt; G</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    G --&gt; H</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    H --&gt; I</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    A[Raw Counts]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    B[Cell and Gene QC]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    C[Normalization]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    D[Dimensional Reduction]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    E[Clustering]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    F[Marker Detection]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    G[Cell Annotation]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    H[Biological Interpretation]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    I[Reproducible Reporting]</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    A --&gt; B</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    B --&gt; C</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    C --&gt; D</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    D --&gt; E</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    E --&gt; F</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    F --&gt; G</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    G --&gt; H</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    H --&gt; I</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -296,7 +369,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     F[Marker Detection]
     G[Cell Annotation]
     H[Biological Interpretation]
-    I[Reporting]
+    I[Reproducible Reporting]
 
     A --&gt; B
     B --&gt; C
@@ -322,22 +395,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<hr>
 </section>
-<section id="planned-tools" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="planned-tools"><span class="header-section-number">6.2</span> Planned Tools</h2>
+<section id="system-components" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="system-components"><span class="header-section-number">6.5</span> System Components</h2>
+<section id="cell-and-gene-quality-control" class="level3">
+<h3 class="anchored" data-anchor-id="cell-and-gene-quality-control">Cell and Gene Quality Control</h3>
+<p>Quality control evaluates cell integrity, sequencing depth, feature counts, and potential technical artifacts before downstream analysis.</p>
+<p>Common assessments include:</p>
+<ul>
+<li>number of detected genes</li>
+<li>sequencing depth</li>
+<li>mitochondrial content</li>
+<li>outlier detection</li>
+</ul>
+</section>
+<section id="normalization" class="level3">
+<h3 class="anchored" data-anchor-id="normalization">Normalization</h3>
+<p>Normalization adjusts expression measurements to improve comparability across cells while reducing technical variation.</p>
+</section>
+<section id="dimensional-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="dimensional-reduction">Dimensional Reduction</h3>
+<p>Dimensional reduction simplifies high-dimensional expression data into lower-dimensional representations that support exploration and visualization.</p>
+<p>Common approaches include:</p>
+<ul>
+<li>PCA</li>
+<li>UMAP</li>
+<li>t-SNE</li>
+</ul>
+</section>
+<section id="clustering" class="level3">
+<h3 class="anchored" data-anchor-id="clustering">Clustering</h3>
+<p>Clustering identifies groups of cells with similar expression profiles.</p>
+<p>These clusters often represent distinct cell populations or cellular states.</p>
+</section>
+<section id="marker-detection" class="level3">
+<h3 class="anchored" data-anchor-id="marker-detection">Marker Detection</h3>
+<p>Marker detection identifies genes that distinguish clusters and support downstream biological interpretation.</p>
+</section>
+<section id="cell-annotation" class="level3">
+<h3 class="anchored" data-anchor-id="cell-annotation">Cell Annotation</h3>
+<p>Cell annotation assigns biological meaning to clusters using marker genes, reference datasets, and domain knowledge.</p>
+</section>
+<section id="biological-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="biological-interpretation">Biological Interpretation</h3>
+<p>Biological interpretation connects observed cellular patterns to biological processes, developmental programs, tissue organization, or disease mechanisms.</p>
+</section>
+<section id="reproducible-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-reporting">Reproducible Reporting</h3>
+<p>Reproducible reporting connects analytical decisions, visualizations, interpretation, and conclusions within a transparent analytical document.</p>
+<p>Typical tools:</p>
+<ul>
+<li>Quarto</li>
+<li>GitHub</li>
+<li>reproducible computational environments</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="core-technologies" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="core-technologies"><span class="header-section-number">6.6</span> Core Technologies</h2>
 <ul>
 <li>Seurat</li>
 <li>Scanpy</li>
 <li>SingleCellExperiment</li>
-<li>UMAP / PCA</li>
+<li>UMAP</li>
+<li>PCA</li>
 <li>Quarto</li>
-<li><h2 id="status" data-number="6.3" class="anchored"><span class="header-section-number">6.3</span> Status</h2></li>
 </ul>
-<p>Active flagship build.</p>
+<p>These technologies support the workflow, but the primary focus of the Single-cell RNA-Seq System is cellular reasoning, interpretation, and reproducibility.</p>
+<hr>
 </section>
-<section id="live-build" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="live-build"><span class="header-section-number">6.4</span> Live Build</h2>
-<p><a href="https://singlecell.complexdatainsights.com">singlecell.complexdatainsights.com</a></p>
+<section id="status" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="status"><span class="header-section-number">6.7</span> Status</h2>
+<p><strong>Active build</strong></p>
+<p>The Single-cell RNA-Seq System serves as the reference implementation for cell-level transcriptomic analysis within the Omics Systems framework.</p>
+<hr>
+</section>
+<section id="live-build" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="live-build"><span class="header-section-number">6.8</span> Live Build</h2>
+<p><a href="https://singlecell.complexdatainsights.com" class="uri">https://singlecell.complexdatainsights.com</a></p>
+<hr>
+</section>
+<section id="key-takeaway" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="key-takeaway"><span class="header-section-number">6.9</span> Key Takeaway</h2>
+<p>The Single-cell RNA-Seq System illustrates the Omics Systems approach to cell-level transcriptomic analysis.</p>
+<p>Rather than treating quality control, normalization, clustering, annotation, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.</p>
+<p>The result is a workflow that links:</p>
+<p><strong>cell-level expression data → cellular evidence → biological interpretation → reproducible reporting</strong></p>
+<p>in a transparent, reproducible, and scientifically defensible manner.</p>
 
 
 </section>
@@ -394,13 +540,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -751,8 +898,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./999-appendix.html" class="pagination-link" aria-label="Appendix">
-        <span class="nav-page-text">Appendix</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./05-multiomics-integration.html" class="pagination-link" aria-label="Build 05 · Multi-omics Integration System">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Build 05 · Multi-omics Integration System</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

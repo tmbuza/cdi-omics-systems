@@ -1,0 +1,253 @@
+# Build 06 · Multi-omics Integration System
+
+A structured analytical system for integrating multiple biological data layers into unified and interpretable biological insight.
+
+The Multi-omics Integration System is included as a planned expansion within the CDI Omics Systems Architecture. It demonstrates how evidence generated across multiple omics domains can be harmonized, integrated, modeled, and interpreted within a reproducible analytical framework.
+
+---
+
+## Biological Focus
+
+Multi-omics integration enables the study of:
+
+- cross-domain biological relationships
+- molecular interactions
+- systems-level biology
+- transcript–protein relationships
+- host–microbe interactions
+- genotype–phenotype relationships
+- integrated biological interpretation
+
+The goal is not simply to combine datasets, but to generate a more complete understanding of biological systems than any individual omics layer can provide.
+
+---
+
+## Why Multi-omics?
+
+Individual omics technologies provide valuable but partial views of biological systems.
+
+RNA-Seq captures gene expression.
+
+Microbiome analysis characterizes microbial communities.
+
+Proteomics measures protein-level abundance and functional signals.
+
+GWAS identifies genetic associations.
+
+Single-cell RNA-Seq reveals cellular heterogeneity.
+
+The Multi-omics Integration System brings these complementary perspectives together to support systems-level biological understanding.
+
+As a result, the Multi-omics Integration System introduces analytical concepts such as data harmonization, feature integration, cross-domain modeling, pathway-level synthesis, and systems interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.
+
+---
+
+## Relationship to the Omics Systems Architecture
+
+All Omics System Builds share a common analytical foundation.
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+The Multi-omics Integration System extends this architecture by integrating evidence generated across multiple Omics System Builds into a unified framework for systems-level interpretation.
+
+---
+
+## Multi-omics Integration Architecture
+
+```{mermaid}
+flowchart TD
+
+    A[RNA-Seq System]
+    B[Microbiome System]
+    C[Proteomics System]
+    D[GWAS System]
+    E[Single-cell System]
+
+    F[Data Harmonization]
+    G[Feature Integration]
+    H[Multi-omics Modeling]
+    I[Systems Interpretation]
+    J[Reproducible Reporting]
+
+    A --> F
+    B --> F
+    C --> F
+    D --> F
+    E --> F
+
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+
+    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
+    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
+    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
+    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
+    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
+    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
+    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
+    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
+    style J fill:#f8fafc,stroke:#334155,stroke-width:2px,color:#0f172a
+```
+
+---
+
+## System Components
+
+### Data Harmonization
+
+Data harmonization aligns samples, metadata, identifiers, feature definitions, and measurement scales across multiple biological data sources.
+
+The objective is to ensure that information generated from different omics domains can be compared and integrated appropriately.
+
+Common harmonization tasks include:
+
+- sample identifier matching
+- metadata standardization
+- phenotype and condition alignment
+- feature identifier mapping
+- batch and platform documentation
+- missing-data assessment
+
+### Feature Integration
+
+Feature integration combines information from multiple omics layers into a unified analytical representation.
+
+Examples include:
+
+- transcriptomics and proteomics integration
+- transcriptomics and microbiome integration
+- genotype and expression integration
+- microbiome and host phenotype integration
+- clinical and molecular data integration
+
+### Multi-omics Modeling
+
+Multi-omics modeling identifies relationships that span multiple biological layers.
+
+Common approaches include:
+
+- correlation-based integration
+- network analysis
+- pathway-level integration
+- machine learning
+- latent factor models
+- predictive modeling
+
+### Systems Interpretation
+
+Systems interpretation translates integrated analytical results into biological understanding.
+
+Common areas of interpretation include:
+
+- biological pathways
+- molecular networks
+- host–microbe interactions
+- genotype–phenotype relationships
+- transcript–protein relationships
+- disease mechanisms
+- systems-level hypotheses
+
+### Reproducible Reporting
+
+Reproducible reporting connects analytical decisions, harmonized datasets, integrated results, interpretation, and conclusions within a transparent analytical document.
+
+Typical tools include:
+
+- Quarto
+- GitHub
+- reproducible computational environments
+
+---
+
+## Core Technologies
+
+Examples of technologies commonly used within the Multi-omics Integration System include:
+
+- R
+- Python
+- Bioconductor
+- tidyverse
+- scikit-learn
+- network analysis tools
+- visualization frameworks
+- Quarto
+- GitHub
+
+These technologies support the workflow, but the primary focus of the Multi-omics Integration System is systems-level reasoning, interpretation, and reproducibility.
+
+---
+
+## Expected Outputs
+
+A complete Multi-omics Integration System should produce:
+
+- harmonized sample metadata tables
+- cross-omics feature mapping tables
+- integrated analysis-ready datasets
+- cross-domain association summaries
+- multi-omics model outputs
+- pathway-level synthesis summaries
+- network or systems-level interpretation outputs
+- integrated biological interpretation reports
+- reproducible analytical reports
+
+---
+
+## Status
+
+**Planned expansion / integrative architecture**
+
+The Multi-omics Integration System serves as the systems-level integration layer within the Omics Systems framework, bringing together evidence generated across multiple analytical domains.
+
+---
+
+## Live Build
+
+The Multiomics Ecosystem is published at:
+
+<https://multiomics.complexdatainsights.com>
+
+---
+
+## Key Takeaway
+
+The Multi-omics Integration System illustrates the Omics Systems approach to cross-domain biological analysis.
+
+Rather than treating transcriptomics, microbiome data, proteomics, genetics, clinical metadata, and other biological layers as independent analyses, the system integrates them into a unified framework for systems-level interpretation.
+
+The result is a workflow that links:
+
+```text
+multiple biological data layers
+      ↓
+integrated evidence
+      ↓
+systems interpretation
+      ↓
+reproducible reporting
+```
+
+in a transparent, reproducible, and scientifically defensible manner.

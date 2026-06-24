@@ -1,175 +1,190 @@
----
-title: "Preface and Overview"
----
-
 # Preface and Overview
 
-## CDI Omics Systems
+## Omics Systems
 
-CDI Omics Systems is an evolving ecosystem of structured omics workflows designed to connect:
+At Complex Data Insights (CDI), we define Omics Systems as a systems-oriented framework for reproducible omics data analysis, interpretation, and reporting.
 
-- raw biological data
-- analytical processing
-- statistical reasoning
-- interpretation
+Rather than focusing on individual tools or isolated workflows, Omics Systems emphasizes complete analytical systems that connect:
+
+- biological questions
+- data generation
+- data processing
+- statistical analysis
+- biological interpretation
 - reproducible reporting
 
-The focus is not only on running tools, but on building complete analytical systems that support transparent and defensible biological insight.
+The goal is to transform biological data into transparent, interpretable, and defensible scientific insight.
 
 ---
 
-# An Evolving Omics Ecosystem
+## Why Omics Systems?
 
-CDI Omics Systems is designed as a modular and continuously expanding ecosystem of reproducible analytical systems.
+Modern omics analyses often focus heavily on software tools and isolated workflows.
 
-Each build represents a connected workflow architecture focused on:
+However, generating outputs alone does not guarantee meaningful biological understanding.
 
-- reproducibility
-- workflow transparency
-- interpretation-first analysis
-- systems-oriented biological reasoning
-
-Some builds are actively expanding as the ecosystem evolves.
-
----
-
-# Systems Over Outputs
-
-Many workflows stop at generating outputs.
-
-CDI Omics Systems emphasizes:
+Omics Systems promotes a systems-oriented approach:
 
 ```text
-Data
-→ Processing
-→ Exploration
-→ Statistical analysis
-→ Interpretation
-→ Reporting
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
 ```
 
-Each build is designed to function as a connected system rather than an isolated tutorial.
+This perspective helps ensure that analytical results remain transparent, reproducible, and scientifically defensible.
 
 ---
 
-# Omics System Builds
+## A Common Omics Architecture
 
-## Build 01 · RNA-seq System
+Although RNA-Seq, microbiome, proteomics, GWAS, single-cell, and multi-omics analyses address different biological questions, they share a common analytical foundation.
 
-End-to-end transcriptomics workflows integrating:
+### Shared Omics Infrastructure
 
-- FastQC
-- MultiQC
-- Salmon / STAR
-- featureCounts
-- DESeq2
-- exploration and visualization
-- Quarto reporting
+All Omics System Builds rely on common principles and processing layers:
 
-## Status
+- experimental design
+- data generation technologies
+- data management
+- omics data processing
+- quality control
+- reproducibility practices
 
-Active flagship build.
+### Domain-Specific Extensions
 
-## Live Build
+The systems diverge after feature generation and enter specialized analytical workflows.
 
-[rnaseq.complexdatainsights.com](https://rnaseq.complexdatainsights.com)
+| Build | Primary Focus | Status |
+|---|---|---|
+| RNA-Seq | Gene expression | Implemented |
+| Microbiome | Microbial communities | Implemented |
+| Proteomics | Protein abundance and functional interpretation | Current addition |
+| GWAS | Genetic variants | Planned expansion |
+| Single-cell | Cellular heterogeneity | Planned expansion |
+| Multi-omics | Cross-domain integration | Planned expansion |
 
----
-
-## Build 02 · Microbiome System
-
-Structured microbiome analysis systems integrating:
-
-- denoising
-- taxonomy assignment
-- ecological analysis
-- diversity analysis
-- interpretation workflows
-
-## Status
-
-Active build.
-
-## Live Build
-
-[microbiome.complexdatainsights.com](https://microbiome.complexdatainsights.com)
+Every Omics System Build extends this common architecture for a specific biological domain.
 
 ---
 
-## Build 03 · GWAS System
+## Omics Systems Architecture
 
-Genome-wide association workflows integrating:
+```{mermaid}
+flowchart TD
 
-- genotype quality control
-- population structure
-- association testing
-- variant interpretation
+    A[Biological Question]
+    B[Experimental Design]
+    C[Data Generation]
+    D[Omics Data Processing]
+    E[Quality Control]
+    F[Feature Generation]
 
-## Status
+    G[RNA-Seq]
+    H[Microbiome]
+    P[Proteomics]
+    I[GWAS]
+    J[Single-cell]
+    K[Multi-omics]
 
-Active build.
+    L[Statistical Inference]
+    M[Biological Interpretation]
+    N[Reproducible Reporting]
 
-## Live Build
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 
-[gwas.complexdatainsights.com](https://gwas.complexdatainsights.com)
+    F --> G
+    F --> H
+    F --> P
+    F --> I
+    F --> J
+    F --> K
 
----
+    G --> L
+    H --> L
+    P --> L
+    I --> L
+    J --> L
+    K --> L
 
-## Build 04 · Single-cell RNA-seq System
-
-Single-cell systems integrating:
-
-- normalization
-- clustering
-- dimensional reduction
-- annotation
-- cellular interpretation
-
-## Status
-
-Active build.
-
-## Live Build
-
-[singlecell.complexdatainsights.com](https://singlecell.complexdatainsights.com)
-
----
-
-## Build 05 · Multi-omics Integration System
-
-Integrated systems connecting:
-
-- transcriptomics
-- microbiome
-- clinical metadata
-- statistical modeling
-- interpretation layers
-
-## Status
-
-Expanding build.
-
-## Live Build
-
-[multiomics.complexdatainsights.com](https://multiomics.complexdatainsights.com)
+    L --> M
+    M --> N
+```
 
 ---
 
-# Workflow Philosophy
+## Current Omics System Builds
 
-CDI Omics Systems emphasizes:
+The current CDI Omics Systems guide summarizes the implementation of the Omics Systems Architecture across major biological data domains.
 
-- reproducibility
-- interpretation-first analysis
-- workflow transparency
-- modular systems architecture
-- defensible analytical reasoning
+RNA-Seq and Microbiome represent the first implemented Omics System builds. Proteomics is the current addition, extending the architecture from transcript-level and community-level analysis into protein-level biological interpretation.
 
-The ecosystem is intentionally designed to evolve progressively as individual builds expand.
+GWAS, single-cell RNA-Seq, and multi-omics integration are included as planned expansion systems that extend the same architecture into variant-level, cell-resolution, and cross-domain biological analysis.
+
+### Build 01 · RNA-Seq System
+
+**System focus:** transcript-level biological analysis  
+**Primary features:** genes, transcripts, expression counts  
+**Typical outputs:** differential expression results, pathway summaries, reproducible reports  
+**Status:** implemented system
+
+### Build 02 · Microbiome System
+
+**System focus:** microbial community analysis  
+**Primary features:** ASVs, OTUs, taxa, microbial pathways  
+**Typical outputs:** diversity summaries, taxonomic profiles, differential abundance results, biological interpretation reports  
+**Status:** implemented system
+
+### Build 03 · Proteomics System
+
+**System focus:** protein-level biological analysis  
+**Primary features:** proteins, peptides, protein groups, functional annotations  
+**Typical outputs:** differential protein abundance results, GO/pathway enrichment, protein-network interpretation, reproducible reports  
+**Status:** current addition / active implementation
+
+### Build 04 · GWAS System
+
+**System focus:** variant-level association analysis  
+**Primary features:** SNPs, genotypes, phenotypes, association statistics  
+**Typical outputs:** association results, Manhattan plots, candidate loci, variant interpretation summaries  
+**Status:** planned expansion
+
+### Build 05 · Single-cell RNA-Seq System
+
+**System focus:** cell-resolution transcriptomics  
+**Primary features:** cells, genes, clusters, marker genes, cell types  
+**Typical outputs:** clustering results, marker-gene tables, cell-type annotations, trajectory or state-level interpretation  
+**Status:** planned expansion
+
+### Build 06 · Multi-omics Integration System
+
+**System focus:** cross-domain biological integration  
+**Primary features:** harmonized samples, shared metadata, multi-layer molecular features  
+**Typical outputs:** integrated signatures, cross-omics associations, pathway-level synthesis, biological interpretation reports  
+**Status:** planned expansion
 
 ---
 
-# Technology Ecosystem
+## Technology Ecosystem
 
 Depending on the build, workflows may integrate:
 
@@ -177,16 +192,24 @@ Depending on the build, workflows may integrate:
 - Python
 - Bioconductor
 - Quarto
-- Plotly
-- QIIME2
+- QIIME 2
 - Scanpy
+- Plotly
 - GitHub Pages
-- reproducible environments
+- reproducible computational environments
+
+Technology choices are secondary to analytical reasoning. Tools may evolve, but the underlying system architecture remains consistent.
 
 ---
 
-# CDI
+## Workflow Philosophy
 
-Complex Data Insights (CDI)
+Across all builds, Omics Systems emphasizes:
 
-Systems over outputs.
+- systems over outputs
+- interpretation over automation
+- reproducibility over convenience
+- transparency over complexity
+- scientific reasoning over software execution
+
+The goal is to help analysts move beyond running workflows toward building analytical systems that can be understood, reproduced, communicated, and trusted.

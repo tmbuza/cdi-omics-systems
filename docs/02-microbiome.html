@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Build 02 · Microbiome System – CDI Omics Systems</title>
+<title>Build 02 · Microbiome System – CDI Omics Systems</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -65,7 +68,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./03-gwas.html" rel="next">
+<link href="./03-proteomics.html" rel="next">
 <link href="./01-rnaseq.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -73,10 +76,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-231ef2f9d4ce3268f31ef752336c15d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d8ad657b878717df1156ab40fed854c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -123,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-microbiome.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Build 02 · Microbiome System</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-microbiome.html"><span class="chapter-title">Build 02 · Microbiome System</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -150,38 +153,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">index.html</span></span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./00-preface-and-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preface and Overview</span></span></a>
+  <a href="./00-preface-and-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Preface and Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-rnaseq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Build 01 · RNA-seq System</span></span></a>
+  <a href="./01-rnaseq.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 01 · RNA-Seq System</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-microbiome.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Build 02 · Microbiome System</span></span></a>
+  <a href="./02-microbiome.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Build 02 · Microbiome System</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-gwas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Build 03 · GWAS System</span></span></a>
+  <a href="./03-proteomics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 03 · Proteomics System</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-single-cell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Build 04 · Single-cell RNA-seq System</span></span></a>
+  <a href="./04-gwas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 04 · GWAS System</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-single-cell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 05 · Single-cell RNA-Seq System</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-multiomics-integration.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Build 06 · Multi-omics Integration System</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -211,10 +218,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#system-path" id="toc-system-path" class="nav-link active" data-scroll-target="#system-path"><span class="header-section-number">4.1</span> System Path</a></li>
-  <li><a href="#planned-tools" id="toc-planned-tools" class="nav-link" data-scroll-target="#planned-tools"><span class="header-section-number">4.2</span> Planned Tools</a></li>
-  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status"><span class="header-section-number">4.3</span> Status</a></li>
-  <li><a href="#live-build" id="toc-live-build" class="nav-link" data-scroll-target="#live-build"><span class="header-section-number">4.4</span> Live Build</a></li>
+  <li><a href="#biological-focus" id="toc-biological-focus" class="nav-link active" data-scroll-target="#biological-focus">Biological Focus</a></li>
+  <li><a href="#why-microbiome" id="toc-why-microbiome" class="nav-link" data-scroll-target="#why-microbiome">Why Microbiome?</a></li>
+  <li><a href="#relationship-to-the-omics-systems-architecture" id="toc-relationship-to-the-omics-systems-architecture" class="nav-link" data-scroll-target="#relationship-to-the-omics-systems-architecture">Relationship to the Omics Systems Architecture</a></li>
+  <li><a href="#microbiome-system-architecture" id="toc-microbiome-system-architecture" class="nav-link" data-scroll-target="#microbiome-system-architecture">Microbiome System Architecture</a></li>
+  <li><a href="#system-components" id="toc-system-components" class="nav-link" data-scroll-target="#system-components">System Components</a>
+  <ul class="collapse">
+  <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control">Quality Control</a></li>
+  <li><a href="#denoising-and-asv-inference" id="toc-denoising-and-asv-inference" class="nav-link" data-scroll-target="#denoising-and-asv-inference">Denoising and ASV Inference</a></li>
+  <li><a href="#taxonomy-assignment" id="toc-taxonomy-assignment" class="nav-link" data-scroll-target="#taxonomy-assignment">Taxonomy Assignment</a></li>
+  <li><a href="#diversity-analysis" id="toc-diversity-analysis" class="nav-link" data-scroll-target="#diversity-analysis">Diversity Analysis</a></li>
+  <li><a href="#community-structure" id="toc-community-structure" class="nav-link" data-scroll-target="#community-structure">Community Structure</a></li>
+  <li><a href="#differential-abundance" id="toc-differential-abundance" class="nav-link" data-scroll-target="#differential-abundance">Differential Abundance</a></li>
+  <li><a href="#ecological-interpretation" id="toc-ecological-interpretation" class="nav-link" data-scroll-target="#ecological-interpretation">Ecological Interpretation</a></li>
+  <li><a href="#reproducible-reporting" id="toc-reproducible-reporting" class="nav-link" data-scroll-target="#reproducible-reporting">Reproducible Reporting</a></li>
+  </ul></li>
+  <li><a href="#core-technologies" id="toc-core-technologies" class="nav-link" data-scroll-target="#core-technologies">Core Technologies</a></li>
+  <li><a href="#expected-outputs" id="toc-expected-outputs" class="nav-link" data-scroll-target="#expected-outputs">Expected Outputs</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
+  <li><a href="#live-build" id="toc-live-build" class="nav-link" data-scroll-target="#live-build">Live Build</a></li>
+  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway">Key Takeaway</a></li>
   </ul>
 </nav>
     </div>
@@ -223,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Build 02 · Microbiome System</span></h1>
+<h1 class="title"><span class="chapter-title">Build 02 · Microbiome System</span></h1>
 </div>
 
 
@@ -234,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 2026</p>
+      <p class="date">Jun 2026</p>
     </div>
   </div>
   
@@ -246,65 +269,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A structured microbiome workflow for reproducible ecological analysis and interpretation.</p>
-<section id="system-path" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="system-path"><span class="header-section-number">4.1</span> System Path</h2>
+<p>A structured microbiome analysis system for reproducible ecological analysis, biological interpretation, and reporting.</p>
+<p>The Microbiome System demonstrates how microbial sequencing data can be transformed into ecological and biological insights through a structured and reproducible analytical framework.</p>
+<hr>
+<section id="biological-focus" class="level2">
+<h2 class="anchored" data-anchor-id="biological-focus">Biological Focus</h2>
+<p>Microbiome analysis enables the study of:</p>
+<ul>
+<li>microbial community composition</li>
+<li>ecological diversity</li>
+<li>community structure</li>
+<li>taxonomic profiles</li>
+<li>functional potential</li>
+<li>host–microbe relationships</li>
+<li>ecological interpretation</li>
+</ul>
+<p>The goal is not simply to describe microbial communities, but to understand how ecological patterns relate to biological and environmental processes.</p>
+<hr>
+</section>
+<section id="why-microbiome" class="level2">
+<h2 class="anchored" data-anchor-id="why-microbiome">Why Microbiome?</h2>
+<p>The Microbiome System serves as a complementary implementation of the Omics Systems Architecture.</p>
+<p>While RNA-Seq focuses on gene expression, microbiome analysis focuses on microbial communities and ecological relationships.</p>
+<p>As a result, the Microbiome System introduces analytical concepts such as diversity analysis, ecological distance measures, community structure, compositionality, taxonomic interpretation, and ecological reasoning while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.</p>
+<hr>
+</section>
+<section id="relationship-to-the-omics-systems-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-the-omics-systems-architecture">Relationship to the Omics Systems Architecture</h2>
+<p>All Omics System Builds share a common analytical foundation.</p>
+<pre class="text"><code>Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting</code></pre>
+<p>The Microbiome System extends this architecture by transforming microbial sequencing reads into community profiles that can be explored, statistically evaluated, ecologically interpreted, and reported within a reproducible analytical framework.</p>
+<hr>
+</section>
+<section id="microbiome-system-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="microbiome-system-architecture">Microbiome System Architecture</h2>
 <div class="cell" data-layout-align="default">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    A[FASTQ Files]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    B[Quality Control]</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    C[Denoising and ASV Inference]</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    D[Taxonomy Assignment]</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    E[Diversity Analysis]</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    F[Community Structure]</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    G[Differential Abundance]</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    H[Ecological Interpretation]</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    I[Quarto Reporting]</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    A --&gt; B</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    B --&gt; C</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    C --&gt; D</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    D --&gt; E</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    E --&gt; F</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    F --&gt; G</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    G --&gt; H</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    H --&gt; I</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flowchart TD</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    A[FASTQ Files]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    B[Quality Control]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    C[Denoising and ASV Inference]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    D[Taxonomy Assignment]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    E[Diversity Analysis]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    F[Community Structure]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    G[Differential Abundance]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    H[Ecological Interpretation]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    I[Reproducible Reporting]</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    A --&gt; B</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    B --&gt; C</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    C --&gt; D</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    D --&gt; E</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    E --&gt; F</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    F --&gt; G</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    G --&gt; H</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    H --&gt; I</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -313,82 +362,175 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre class="mermaid mermaid-js">flowchart TD
 
     A[FASTQ Files]
-
     B[Quality Control]
-
     C[Denoising and ASV Inference]
-
     D[Taxonomy Assignment]
-
     E[Diversity Analysis]
-
     F[Community Structure]
-
     G[Differential Abundance]
-
     H[Ecological Interpretation]
-
-    I[Quarto Reporting]
+    I[Reproducible Reporting]
 
     A --&gt; B
-
     B --&gt; C
-
     C --&gt; D
-
     D --&gt; E
-
     E --&gt; F
-
     F --&gt; G
-
     G --&gt; H
-
     H --&gt; I
 
     style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
-
     style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
-
     style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
-
     style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
-
     style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
-
     style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
-
     style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
-
     style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
-
     style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
-
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
+<hr>
 </section>
-<section id="planned-tools" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="planned-tools"><span class="header-section-number">4.2</span> Planned Tools</h2>
+<section id="system-components" class="level2">
+<h2 class="anchored" data-anchor-id="system-components">System Components</h2>
+<section id="quality-control" class="level3">
+<h3 class="anchored" data-anchor-id="quality-control">Quality Control</h3>
+<p>Quality control evaluates sequencing quality, sample integrity, contamination, read depth, and filtering requirements before downstream ecological analysis begins.</p>
+</section>
+<section id="denoising-and-asv-inference" class="level3">
+<h3 class="anchored" data-anchor-id="denoising-and-asv-inference">Denoising and ASV Inference</h3>
+<p>Denoising removes sequencing errors and infers high-resolution amplicon sequence variants (ASVs) that represent biological sequences within the community.</p>
+<p>Typical tools include:</p>
+<ul>
+<li>DADA2</li>
+<li>QIIME 2</li>
+</ul>
+</section>
+<section id="taxonomy-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="taxonomy-assignment">Taxonomy Assignment</h3>
+<p>Taxonomy assignment classifies ASVs against reference databases to characterize microbial community composition.</p>
+<p>Common reference databases include:</p>
+<ul>
+<li>SILVA</li>
+<li>Greengenes</li>
+<li>GTDB</li>
+</ul>
+</section>
+<section id="diversity-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="diversity-analysis">Diversity Analysis</h3>
+<p>Diversity analysis evaluates microbial richness, evenness, and community dissimilarity.</p>
+<p>Common analyses include:</p>
+<ul>
+<li>alpha diversity</li>
+<li>beta diversity</li>
+<li>rarefaction assessment</li>
+<li>ecological distance metrics</li>
+</ul>
+</section>
+<section id="community-structure" class="level3">
+<h3 class="anchored" data-anchor-id="community-structure">Community Structure</h3>
+<p>Community structure analysis evaluates relationships among microbial communities across samples, groups, environments, or host conditions.</p>
+<p>Common approaches include:</p>
+<ul>
+<li>ordination</li>
+<li>clustering</li>
+<li>PERMANOVA</li>
+<li>dispersion analysis</li>
+</ul>
+</section>
+<section id="differential-abundance" class="level3">
+<h3 class="anchored" data-anchor-id="differential-abundance">Differential Abundance</h3>
+<p>Differential abundance analysis identifies microbial taxa or features associated with biological or environmental conditions.</p>
+<p>This stage requires careful consideration of compositionality, normalization, sparsity, multiple testing, and statistical assumptions.</p>
+</section>
+<section id="ecological-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="ecological-interpretation">Ecological Interpretation</h3>
+<p>Ecological interpretation translates statistical patterns into biological and ecological understanding.</p>
+<p>Common areas of interpretation include:</p>
+<ul>
+<li>host–microbe interactions</li>
+<li>environmental influences</li>
+<li>community dynamics</li>
+<li>microbial shifts across conditions</li>
+<li>ecological hypotheses</li>
+</ul>
+</section>
+<section id="reproducible-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-reporting">Reproducible Reporting</h3>
+<p>Reproducible reporting connects workflow decisions, analytical outputs, interpretation, and conclusions within a transparent analytical document.</p>
+<p>Typical tools include:</p>
+<ul>
+<li>Quarto</li>
+<li>GitHub</li>
+<li>reproducible computational environments</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="core-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="core-technologies">Core Technologies</h2>
+<p>Examples of technologies commonly used within the Microbiome System include:</p>
 <ul>
 <li>QIIME 2</li>
+<li>Mothur</li>
 <li>DADA2</li>
 <li>phyloseq</li>
 <li>vegan</li>
 <li>ggplot2</li>
 <li>Quarto</li>
+<li>GitHub</li>
 </ul>
+<p>These technologies support the workflow, but the primary focus of the Microbiome System is ecological reasoning, biological interpretation, and reproducibility.</p>
+<hr>
 </section>
-<section id="status" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="status"><span class="header-section-number">4.3</span> Status</h2>
-<p>Active flagship build.</p>
+<section id="expected-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outputs">Expected Outputs</h2>
+<p>A complete Microbiome System should produce:</p>
+<ul>
+<li>quality control summaries</li>
+<li>validated sequencing inputs</li>
+<li>ASV or OTU feature tables</li>
+<li>taxonomy tables</li>
+<li>sample metadata checks</li>
+<li>alpha diversity summaries</li>
+<li>beta diversity and ordination outputs</li>
+<li>community structure results</li>
+<li>differential abundance results</li>
+<li>ecological interpretation summaries</li>
+<li>reproducible analytical reports</li>
+</ul>
+<hr>
 </section>
-<section id="live-build" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="live-build"><span class="header-section-number">4.4</span> Live Build</h2>
-<p><a href="https://microbiome.complexdatainsights.com">microbiome.complexdatainsights.com</a></p>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<p><strong>Active build</strong></p>
+<p>The Microbiome System serves as the reference implementation for ecological and community-based analysis within the Omics Systems Architecture.</p>
+<hr>
+</section>
+<section id="live-build" class="level2">
+<h2 class="anchored" data-anchor-id="live-build">Live Build</h2>
+<p><a href="https://microbiome.complexdatainsights.com" class="uri">https://microbiome.complexdatainsights.com</a></p>
+<hr>
+</section>
+<section id="key-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaway">Key Takeaway</h2>
+<p>The Microbiome System illustrates the Omics Systems approach to microbial community analysis.</p>
+<p>Rather than treating sequence processing, diversity analysis, community structure assessment, ecological interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.</p>
+<p>The result is a workflow that links:</p>
+<pre class="text"><code>microbial sequencing data
+      ↓
+ecological evidence
+      ↓
+biological interpretation
+      ↓
+reproducible reporting</code></pre>
+<p>in a transparent, reproducible, and scientifically defensible manner.</p>
 
 
 </section>
@@ -445,13 +587,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -797,13 +940,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./01-rnaseq.html" class="pagination-link" aria-label="Build 01 · RNA-seq System">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Build 01 · RNA-seq System</span></span>
+      <a href="./01-rnaseq.html" class="pagination-link" aria-label="Build 01 · RNA-Seq System">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Build 01 · RNA-Seq System</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03-gwas.html" class="pagination-link" aria-label="Build 03 · GWAS System">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Build 03 · GWAS System</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./03-proteomics.html" class="pagination-link" aria-label="Build 03 · Proteomics System">
+        <span class="nav-page-text"><span class="chapter-title">Build 03 · Proteomics System</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

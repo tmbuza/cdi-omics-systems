@@ -1,8 +1,26 @@
 # Appendix {-}
 
+This appendix summarizes shared principles, reproducibility expectations, and technical conventions used across CDI Omics Systems.
+
+---
+
 ## Reproducibility
 
-CDI Omics Systems emphasizes reproducible workflows through transparent analytical pipelines, version-controlled environments, and structured reporting.
+CDI Omics Systems emphasizes reproducible workflows through transparent analytical pipelines, version-controlled environments, structured reporting, and clearly documented analytical decisions.
+
+Across all builds, reproducibility means that another analyst should be able to understand:
+
+- what data were used
+- how inputs were prepared
+- which quality checks were performed
+- which scripts or tools were applied
+- how outputs were generated
+- how biological conclusions were reached
+- how the analysis can be repeated or extended
+
+Reproducibility is therefore treated as a system-level responsibility, not only a final reporting step.
+
+---
 
 ## Environments
 
@@ -14,7 +32,93 @@ Typical environments across CDI Omics Systems may include:
 - Bioconductor
 - GitHub Pages
 - renv
+- Conda
 - virtual environments
+- containers where appropriate
+
+The specific environment depends on the omics domain, but each system should document the computational context used to generate results.
+
+---
+
+## Shared File Organization
+
+Although individual Omics System Builds may differ, a typical project structure may include:
+
+```text
+project/
+├── _quarto.yml
+├── index.qmd
+├── chapters/
+├── data/
+│   ├── example/
+│   ├── input/
+│   ├── metadata/
+│   ├── results/
+│   └── reports/
+├── scripts/
+│   ├── bash/
+│   ├── R/
+│   └── python/
+├── figures/
+├── logs/
+├── README.md
+└── references.bib
+```
+
+This structure helps separate source data, generated outputs, analysis scripts, reports, and supporting documentation.
+
+---
+
+## Common Analytical Layers
+
+Across Omics System Builds, the following analytical layers are commonly represented:
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation or Feature Validation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+Each system adapts these layers to its own data type and biological focus.
+
+---
+
+## Expected System Outputs
+
+A mature Omics System should produce more than a final table or plot.
+
+Expected outputs may include:
+
+- validated input summaries
+- metadata checks
+- quality control reports
+- analysis-ready feature tables
+- statistical result tables
+- interpretation evidence tables
+- biological interpretation summaries
+- figures and visual summaries
+- reproducible reports
+- version-controlled project documentation
+
+These outputs support transparency, reuse, and scientific defensibility.
+
+---
 
 ## Workflow Philosophy
 
@@ -24,7 +128,16 @@ CDI Omics Systems focuses on:
 - interpretation-first analysis
 - reproducible reporting
 - transparent analytical reasoning
+- documentation as part of analysis
+- biological meaning over tool execution
+- extensible workflows over one-time scripts
+
+The goal is to help analysts move from scattered analysis steps toward structured systems that can be understood, reproduced, communicated, and trusted.
+
+---
 
 ## References
 
 References and supplementary technical resources will continue expanding as individual system builds mature.
+
+Each Omics System Build may include domain-specific references, including software documentation, statistical methods, biological interpretation resources, and reproducibility guidance.

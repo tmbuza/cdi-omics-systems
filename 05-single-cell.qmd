@@ -1,0 +1,248 @@
+# Build 05 · Single-cell RNA-Seq System
+
+A structured single-cell transcriptomics system for reproducible cell-level analysis, interpretation, and reporting.
+
+The Single-cell RNA-Seq System is included as a planned expansion within the CDI Omics Systems Architecture. It demonstrates how cell-level expression measurements can be transformed into biological insights through a structured and reproducible analytical framework.
+
+---
+
+## Biological Focus
+
+Single-cell RNA-Seq analysis enables the study of:
+
+- cellular heterogeneity
+- cell populations
+- cell states
+- developmental trajectories
+- marker genes
+- cell-type annotation
+- cellular interpretation
+
+The goal is not simply to identify clusters of cells, but to understand the biological processes, cell types, and cellular states that drive observed patterns.
+
+---
+
+## Why Single-cell RNA-Seq?
+
+The Single-cell RNA-Seq System serves as the expansion architecture for cell-resolution transcriptomic analysis within the Omics Systems framework.
+
+While bulk RNA-Seq evaluates average gene expression across samples, single-cell RNA-Seq enables the investigation of individual cells, cellular diversity, tissue composition, and cell-state transitions.
+
+As a result, the Single-cell RNA-Seq System introduces analytical concepts such as cellular heterogeneity, cell-level quality control, dimensional reduction, clustering, marker detection, cell annotation, and marker-based interpretation while retaining the same principles of reproducibility, statistical reasoning, and biological interpretation.
+
+---
+
+## Relationship to the Omics Systems Architecture
+
+All Omics System Builds share a common analytical foundation.
+
+```text
+Biological Question
+        ↓
+Experimental Design
+        ↓
+Data Generation
+        ↓
+Omics Data Processing
+        ↓
+Quality Control
+        ↓
+Feature Generation
+        ↓
+Domain-Specific Analysis
+        ↓
+Statistical Inference
+        ↓
+Biological Interpretation
+        ↓
+Reproducible Reporting
+```
+
+The Single-cell RNA-Seq System extends this architecture by transforming cell-level expression measurements into cellular evidence that can be explored, statistically evaluated, biologically interpreted, and reported within a reproducible analytical framework.
+
+---
+
+## Single-cell RNA-Seq System Architecture
+
+```{mermaid}
+flowchart TD
+
+    A[Raw Counts]
+    B[Cell and Gene QC]
+    C[Normalization]
+    D[Dimensional Reduction]
+    E[Clustering]
+    F[Marker Detection]
+    G[Cell Annotation]
+    H[Biological Interpretation]
+    I[Reproducible Reporting]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+
+    style A fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
+    style B fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style C fill:#ecfeff,stroke:#0891b2,stroke-width:2px,color:#0f172a
+    style D fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
+    style E fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#0f172a
+    style F fill:#fae8ff,stroke:#c026d3,stroke-width:2px,color:#0f172a
+    style G fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
+    style H fill:#ecfccb,stroke:#65a30d,stroke-width:2px,color:#0f172a
+    style I fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#0f172a
+```
+
+---
+
+## System Components
+
+### Input Data and Metadata
+
+Single-cell RNA-Seq analysis begins with expression measurements linked to cell-level, sample-level, and experimental metadata.
+
+Common inputs include:
+
+- raw count matrices
+- cell barcode files
+- gene or feature annotation files
+- sample metadata
+- experimental condition metadata
+- batch or sequencing-run information
+
+### Cell and Gene Quality Control
+
+Quality control evaluates cell integrity, sequencing depth, feature counts, and potential technical artifacts before downstream analysis.
+
+Common assessments include:
+
+- number of detected genes
+- sequencing depth
+- mitochondrial content
+- ribosomal content
+- doublet detection
+- outlier detection
+- low-quality cell filtering
+
+### Normalization
+
+Normalization adjusts expression measurements to improve comparability across cells while reducing technical variation.
+
+This step prepares the data for dimensional reduction, clustering, marker detection, and downstream biological interpretation.
+
+### Dimensional Reduction
+
+Dimensional reduction simplifies high-dimensional expression data into lower-dimensional representations that support exploration and visualization.
+
+Common approaches include:
+
+- PCA
+- UMAP
+- t-SNE
+
+### Clustering
+
+Clustering identifies groups of cells with similar expression profiles.
+
+These clusters often represent distinct cell populations, cell states, developmental stages, or condition-associated cellular patterns.
+
+### Marker Detection
+
+Marker detection identifies genes that distinguish clusters and support downstream biological interpretation.
+
+Marker genes provide evidence for cell-type assignment, state characterization, and biological interpretation.
+
+### Cell Annotation
+
+Cell annotation assigns biological meaning to clusters using marker genes, reference datasets, curated knowledge, and domain expertise.
+
+This step should be treated as an evidence-based interpretation process rather than a purely automated label assignment.
+
+### Biological Interpretation
+
+Biological interpretation connects observed cellular patterns to biological processes, developmental programs, tissue organization, immune states, environmental responses, or disease mechanisms.
+
+### Reproducible Reporting
+
+Reproducible reporting connects analytical decisions, quality thresholds, visualizations, marker evidence, annotation logic, interpretation, and conclusions within a transparent analytical document.
+
+Typical tools include:
+
+- Quarto
+- GitHub
+- reproducible computational environments
+
+---
+
+## Core Technologies
+
+Examples of technologies commonly used within the Single-cell RNA-Seq System include:
+
+- Seurat
+- Scanpy
+- SingleCellExperiment
+- scater
+- scran
+- UMAP
+- PCA
+- Quarto
+- GitHub
+
+These technologies support the workflow, but the primary focus of the Single-cell RNA-Seq System is cellular reasoning, marker-based interpretation, and reproducibility.
+
+---
+
+## Expected Outputs
+
+A complete Single-cell RNA-Seq System should produce:
+
+- cell and gene quality control summaries
+- filtered expression matrices
+- normalized expression objects
+- dimensional reduction outputs
+- clustering results
+- marker gene tables
+- cell annotation evidence tables
+- cell-type or cell-state summaries
+- biological interpretation summaries
+- reproducible analytical reports
+
+---
+
+## Status
+
+**Planned expansion**
+
+The Single-cell RNA-Seq System is included as an expansion architecture for cell-resolution transcriptomic analysis within the CDI Omics Systems framework.
+
+---
+
+## Live Build
+
+<https://singlecell.complexdatainsights.com>
+
+---
+
+## Key Takeaway
+
+The Single-cell RNA-Seq System illustrates the Omics Systems approach to cell-level transcriptomic analysis.
+
+Rather than treating quality control, normalization, clustering, annotation, interpretation, and reporting as separate activities, the system connects them into a unified analytical framework.
+
+The result is a workflow that links:
+
+```text
+cell-level expression data
+      ↓
+cellular evidence
+      ↓
+biological interpretation
+      ↓
+reproducible reporting
+```
+
+in a transparent, reproducible, and scientifically defensible manner.
